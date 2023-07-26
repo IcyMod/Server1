@@ -1,0 +1,2915 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Main2 = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local Buttons = Instance.new("ScrollingFrame")
+local HomeButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local LocalPlayerButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local AimbotButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local VisualButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local GunModsButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TeleportationButton = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local SettingsButton = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local CreditsButton = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Title2 = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local HomeSection = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local Title_2 = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
+local SectionTitle = Instance.new("TextLabel")
+local UICorner_14 = Instance.new("UICorner")
+local ProfilePicture = Instance.new("ImageLabel")
+local UICorner_15 = Instance.new("UICorner")
+local LocalPlayerSection = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local SectionTitle_2 = Instance.new("TextLabel")
+local UICorner_17 = Instance.new("UICorner")
+local ProfilePicture_2 = Instance.new("ImageLabel")
+local UICorner_18 = Instance.new("UICorner")
+local Title_3 = Instance.new("TextLabel")
+local UICorner_19 = Instance.new("UICorner")
+local ValueText = Instance.new("TextBox")
+local UICorner_20 = Instance.new("UICorner")
+local ProfilePicture_3 = Instance.new("ImageLabel")
+local UICorner_21 = Instance.new("UICorner")
+local Title_4 = Instance.new("TextLabel")
+local UICorner_22 = Instance.new("UICorner")
+local ValueText2 = Instance.new("TextBox")
+local UICorner_23 = Instance.new("UICorner")
+local Inf = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local AimbotSection = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local SectionTitle_3 = Instance.new("TextLabel")
+local UICorner_26 = Instance.new("UICorner")
+local ProfilePicture_4 = Instance.new("ImageLabel")
+local UICorner_27 = Instance.new("UICorner")
+local Title_5 = Instance.new("TextLabel")
+local UICorner_28 = Instance.new("UICorner")
+local ProfilePicture_5 = Instance.new("ImageLabel")
+local UICorner_29 = Instance.new("UICorner")
+local Title_6 = Instance.new("TextLabel")
+local UICorner_30 = Instance.new("UICorner")
+local AimbotToggle = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local ToggleButton2 = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local VisualsSection = Instance.new("Frame")
+local UICorner_33 = Instance.new("UICorner")
+local SectionTitle_4 = Instance.new("TextLabel")
+local UICorner_34 = Instance.new("UICorner")
+local ProfilePicture_6 = Instance.new("ImageLabel")
+local UICorner_35 = Instance.new("UICorner")
+local Title_7 = Instance.new("TextLabel")
+local UICorner_36 = Instance.new("UICorner")
+local EspToggle = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local TracerToggle = Instance.new("TextButton")
+local UICorner_38 = Instance.new("UICorner")
+local ProfilePicture_7 = Instance.new("ImageLabel")
+local UICorner_39 = Instance.new("UICorner")
+local Title_8 = Instance.new("TextLabel")
+local UICorner_40 = Instance.new("UICorner")
+local TeleportationSection = Instance.new("Frame")
+local UICorner_41 = Instance.new("UICorner")
+local SectionTitle_5 = Instance.new("TextLabel")
+local UICorner_42 = Instance.new("UICorner")
+local PlayerFrame = Instance.new("ScrollingFrame")
+local TeleportToPlayer = Instance.new("TextButton")
+local UICorner_43 = Instance.new("UICorner")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local CreditsSection = Instance.new("Frame")
+local UICorner_44 = Instance.new("UICorner")
+local SectionTitle_6 = Instance.new("TextLabel")
+local UICorner_45 = Instance.new("UICorner")
+local SectionTitle_7 = Instance.new("TextLabel")
+local UICorner_46 = Instance.new("UICorner")
+local OwnerPFP = Instance.new("ImageLabel")
+local UICorner_47 = Instance.new("UICorner")
+local SectionTitle_8 = Instance.new("TextLabel")
+local UICorner_48 = Instance.new("UICorner")
+local SectionTitle_9 = Instance.new("TextLabel")
+local UICorner_49 = Instance.new("UICorner")
+local SectionTitle_10 = Instance.new("TextLabel")
+local UICorner_50 = Instance.new("UICorner")
+local HelperPFP = Instance.new("ImageLabel")
+local UICorner_51 = Instance.new("UICorner")
+local SectionTitle_11 = Instance.new("TextLabel")
+local UICorner_52 = Instance.new("UICorner")
+local BorderFrame = Instance.new("Frame")
+local UICorner_53 = Instance.new("UICorner")
+local GunModsSection = Instance.new("Frame")
+local UICorner_54 = Instance.new("UICorner")
+local SectionTitle_12 = Instance.new("TextLabel")
+local UICorner_55 = Instance.new("UICorner")
+local ToggleButton = Instance.new("TextButton")
+local UICorner_56 = Instance.new("UICorner")
+local ProfilePicture_8 = Instance.new("ImageLabel")
+local UICorner_57 = Instance.new("UICorner")
+local Title_9 = Instance.new("TextLabel")
+local UICorner_58 = Instance.new("UICorner")
+local SettingSection = Instance.new("Frame")
+local UICorner_59 = Instance.new("UICorner")
+local SectionTitle_13 = Instance.new("TextLabel")
+local UICorner_60 = Instance.new("UICorner")
+local SectionTitle_14 = Instance.new("TextLabel")
+local UICorner_61 = Instance.new("UICorner")
+local SectionTitle_15 = Instance.new("TextLabel")
+local UICorner_62 = Instance.new("UICorner")
+local KeySystem = Instance.new("ScreenGui")
+local KeyFrame = Instance.new("Frame")
+local Title_10 = Instance.new("TextLabel")
+local UICorner_63 = Instance.new("UICorner")
+local UICorner_64 = Instance.new("UICorner")
+local Buttons_2 = Instance.new("ScrollingFrame")
+local KeyButton = Instance.new("TextButton")
+local UICorner_65 = Instance.new("UICorner")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local SettingsButton_2 = Instance.new("TextButton")
+local UICorner_66 = Instance.new("UICorner")
+local Title2_2 = Instance.new("TextLabel")
+local UICorner_67 = Instance.new("UICorner")
+local KeySection = Instance.new("Frame")
+local UICorner_68 = Instance.new("UICorner")
+local Title_11 = Instance.new("TextLabel")
+local UICorner_69 = Instance.new("UICorner")
+local SectionTitle_16 = Instance.new("TextLabel")
+local UICorner_70 = Instance.new("UICorner")
+local ProfilePicture_9 = Instance.new("ImageLabel")
+local UICorner_71 = Instance.new("UICorner")
+local KeyBox = Instance.new("TextBox")
+local UICorner_72 = Instance.new("UICorner")
+local KeyButton_2 = Instance.new("TextButton")
+local UICorner_73 = Instance.new("UICorner")
+local SettingsSection = Instance.new("Frame")
+local UICorner_74 = Instance.new("UICorner")
+local Title_12 = Instance.new("TextLabel")
+local UICorner_75 = Instance.new("UICorner")
+local SectionTitle_17 = Instance.new("TextLabel")
+local UICorner_76 = Instance.new("UICorner")
+local Notification = Instance.new("Frame")
+local displayNotificationMessage = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_77 = Instance.new("UICorner")
+
+--Properties:
+
+Main2.Name = "Main2"
+Main2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Main2.Enabled = false
+Main2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Main2.DisplayOrder = 2
+Main2.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Main2
+MainFrame.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.365950823, 0, 0.289377213, 0)
+MainFrame.Size = UDim2.new(0, 435, 0, 308)
+MainFrame.ZIndex = 2
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0206896551, 0, 0.0324675329, 0)
+Title.Size = UDim2.new(0, 420, 0, 24)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "Avexy Hub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = Title
+
+UICorner_2.Parent = MainFrame
+
+Buttons.Name = "Buttons"
+Buttons.Parent = MainFrame
+Buttons.Active = true
+Buttons.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+Buttons.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Buttons.BorderSizePixel = 0
+Buttons.Position = UDim2.new(0.0206896551, 0, 0.198051944, 0)
+Buttons.Size = UDim2.new(0, 136, 0, 231)
+Buttons.CanvasSize = UDim2.new(0, 0, 3, 15)
+Buttons.ScrollBarThickness = 3
+
+HomeButton.Name = "HomeButton"
+HomeButton.Parent = Buttons
+HomeButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+HomeButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeButton.BorderSizePixel = 0
+HomeButton.ClipsDescendants = true
+HomeButton.Position = UDim2.new(0.0661764741, 0, 0.33439827, 0)
+HomeButton.Size = UDim2.new(0, 136, 0, 37)
+HomeButton.Font = Enum.Font.SourceSans
+HomeButton.Text = "Home"
+HomeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+HomeButton.TextSize = 21.000
+HomeButton.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 2)
+UICorner_3.Parent = HomeButton
+
+UIListLayout.Parent = Buttons
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 3)
+
+LocalPlayerButton.Name = "LocalPlayerButton"
+LocalPlayerButton.Parent = Buttons
+LocalPlayerButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+LocalPlayerButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LocalPlayerButton.BorderSizePixel = 0
+LocalPlayerButton.ClipsDescendants = true
+LocalPlayerButton.Position = UDim2.new(0.0661764741, 0, 0.33439827, 0)
+LocalPlayerButton.Size = UDim2.new(0, 136, 0, 37)
+LocalPlayerButton.Font = Enum.Font.SourceSans
+LocalPlayerButton.Text = "LocalPlayer"
+LocalPlayerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayerButton.TextSize = 21.000
+LocalPlayerButton.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 2)
+UICorner_4.Parent = LocalPlayerButton
+
+AimbotButton.Name = "AimbotButton"
+AimbotButton.Parent = Buttons
+AimbotButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+AimbotButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimbotButton.BorderSizePixel = 0
+AimbotButton.ClipsDescendants = true
+AimbotButton.Position = UDim2.new(0, 0, 0.346320361, 0)
+AimbotButton.Size = UDim2.new(0, 136, 0, 37)
+AimbotButton.Font = Enum.Font.SourceSans
+AimbotButton.Text = "Aim"
+AimbotButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotButton.TextSize = 21.000
+AimbotButton.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 2)
+UICorner_5.Parent = AimbotButton
+
+VisualButton.Name = "VisualButton"
+VisualButton.Parent = Buttons
+VisualButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+VisualButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VisualButton.BorderSizePixel = 0
+VisualButton.ClipsDescendants = true
+VisualButton.Position = UDim2.new(0.0661764741, 0, 0.33439827, 0)
+VisualButton.Size = UDim2.new(0, 136, 0, 37)
+VisualButton.Font = Enum.Font.SourceSans
+VisualButton.Text = "Visuals"
+VisualButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+VisualButton.TextSize = 21.000
+VisualButton.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 2)
+UICorner_6.Parent = VisualButton
+
+GunModsButton.Name = "GunModsButton"
+GunModsButton.Parent = Buttons
+GunModsButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+GunModsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GunModsButton.BorderSizePixel = 0
+GunModsButton.ClipsDescendants = true
+GunModsButton.Position = UDim2.new(0.0661764741, 0, 0.33439827, 0)
+GunModsButton.Size = UDim2.new(0, 136, 0, 37)
+GunModsButton.Font = Enum.Font.SourceSans
+GunModsButton.Text = "Gun Mods"
+GunModsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+GunModsButton.TextSize = 21.000
+GunModsButton.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 2)
+UICorner_7.Parent = GunModsButton
+
+TeleportationButton.Name = "TeleportationButton"
+TeleportationButton.Parent = Buttons
+TeleportationButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TeleportationButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TeleportationButton.BorderSizePixel = 0
+TeleportationButton.ClipsDescendants = true
+TeleportationButton.Position = UDim2.new(0.0661764741, 0, 0.33439827, 0)
+TeleportationButton.Size = UDim2.new(0, 136, 0, 37)
+TeleportationButton.Font = Enum.Font.SourceSans
+TeleportationButton.Text = "Teleportation"
+TeleportationButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TeleportationButton.TextSize = 21.000
+TeleportationButton.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 2)
+UICorner_8.Parent = TeleportationButton
+
+SettingsButton.Name = "SettingsButton"
+SettingsButton.Parent = Buttons
+SettingsButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SettingsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsButton.BorderSizePixel = 0
+SettingsButton.ClipsDescendants = true
+SettingsButton.Position = UDim2.new(0.0661764741, 0, 0.33439827, 0)
+SettingsButton.Size = UDim2.new(0, 136, 0, 37)
+SettingsButton.Font = Enum.Font.SourceSans
+SettingsButton.Text = "Settings"
+SettingsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SettingsButton.TextSize = 21.000
+SettingsButton.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 2)
+UICorner_9.Parent = SettingsButton
+
+CreditsButton.Name = "CreditsButton"
+CreditsButton.Parent = Buttons
+CreditsButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+CreditsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CreditsButton.BorderSizePixel = 0
+CreditsButton.ClipsDescendants = true
+CreditsButton.Position = UDim2.new(0.0661764741, 0, 0.33439827, 0)
+CreditsButton.Size = UDim2.new(0, 136, 0, 37)
+CreditsButton.Font = Enum.Font.SourceSans
+CreditsButton.Text = "Credits"
+CreditsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CreditsButton.TextSize = 21.000
+CreditsButton.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0, 2)
+UICorner_10.Parent = CreditsButton
+
+Title2.Name = "Title2"
+Title2.Parent = MainFrame
+Title2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Title2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title2.BorderSizePixel = 0
+Title2.Position = UDim2.new(0.0206896551, 0, 0.133116886, 0)
+Title2.Size = UDim2.new(0, 136, 0, 19)
+Title2.Font = Enum.Font.SourceSansBold
+Title2.Text = "Cheats"
+Title2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title2.TextScaled = true
+Title2.TextSize = 14.000
+Title2.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0, 3)
+UICorner_11.Parent = Title2
+
+HomeSection.Name = "HomeSection"
+HomeSection.Parent = MainFrame
+HomeSection.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+HomeSection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeSection.BorderSizePixel = 0
+HomeSection.Position = UDim2.new(0.354672343, 0, 0.133116886, 0)
+HomeSection.Size = UDim2.new(0, 262, 0, 250)
+
+UICorner_12.Parent = HomeSection
+
+Title_2.Name = "Title"
+Title_2.Parent = HomeSection
+Title_2.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.0779414251, 0, 0.65711695, 0)
+Title_2.Size = UDim2.new(0, 217, 0, 27)
+Title_2.Font = Enum.Font.SourceSansBold
+Title_2.Text = "Username"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0, 3)
+UICorner_13.Parent = Title_2
+
+SectionTitle.Name = "SectionTitle"
+SectionTitle.Parent = HomeSection
+SectionTitle.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle.BackgroundTransparency = 1.000
+SectionTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle.BorderSizePixel = 0
+SectionTitle.Position = UDim2.new(0.0257041864, 0, 0.0240000002, 0)
+SectionTitle.Size = UDim2.new(0, 69, 0, 23)
+SectionTitle.Font = Enum.Font.Unknown
+SectionTitle.Text = "-- Home"
+SectionTitle.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle.TextScaled = true
+SectionTitle.TextSize = 21.000
+SectionTitle.TextWrapped = true
+
+UICorner_14.CornerRadius = UDim.new(0, 3)
+UICorner_14.Parent = SectionTitle
+
+ProfilePicture.Name = "ProfilePicture"
+ProfilePicture.Parent = HomeSection
+ProfilePicture.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfilePicture.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfilePicture.BorderSizePixel = 0
+ProfilePicture.Position = UDim2.new(0.229007632, 0, 0.140000001, 0)
+ProfilePicture.Size = UDim2.new(0, 140, 0, 122)
+ProfilePicture.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_15.Parent = ProfilePicture
+
+LocalPlayerSection.Name = "LocalPlayerSection"
+LocalPlayerSection.Parent = MainFrame
+LocalPlayerSection.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+LocalPlayerSection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LocalPlayerSection.BorderSizePixel = 0
+LocalPlayerSection.Position = UDim2.new(0.354672343, 0, 0.133116886, 0)
+LocalPlayerSection.Size = UDim2.new(0, 262, 0, 250)
+LocalPlayerSection.Visible = false
+
+UICorner_16.Parent = LocalPlayerSection
+
+SectionTitle_2.Name = "SectionTitle"
+SectionTitle_2.Parent = LocalPlayerSection
+SectionTitle_2.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_2.BackgroundTransparency = 1.000
+SectionTitle_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_2.BorderSizePixel = 0
+SectionTitle_2.Position = UDim2.new(0.0257044211, 0, 0, 0)
+SectionTitle_2.Size = UDim2.new(0, 125, 0, 35)
+SectionTitle_2.Font = Enum.Font.Unknown
+SectionTitle_2.Text = "-- LocalPlayer"
+SectionTitle_2.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_2.TextScaled = true
+SectionTitle_2.TextSize = 21.000
+SectionTitle_2.TextWrapped = true
+
+UICorner_17.CornerRadius = UDim.new(0, 3)
+UICorner_17.Parent = SectionTitle_2
+
+ProfilePicture_2.Name = "ProfilePicture"
+ProfilePicture_2.Parent = LocalPlayerSection
+ProfilePicture_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfilePicture_2.BackgroundTransparency = 1.000
+ProfilePicture_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfilePicture_2.BorderSizePixel = 0
+ProfilePicture_2.Position = UDim2.new(0.0572519079, 0, 0.207999766, 0)
+ProfilePicture_2.Size = UDim2.new(0, 48, 0, 40)
+ProfilePicture_2.Image = "rbxassetid://541620958"
+
+UICorner_18.Parent = ProfilePicture_2
+
+Title_3.Name = "Title"
+Title_3.Parent = ProfilePicture_2
+Title_3.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(1.15491343, 0, 0.189999759, 0)
+Title_3.Size = UDim2.new(0, 102, 0, 23)
+Title_3.Font = Enum.Font.SourceSansBold
+Title_3.Text = "Walkspeed"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+UICorner_19.CornerRadius = UDim.new(0, 3)
+UICorner_19.Parent = Title_3
+
+ValueText.Name = "ValueText"
+ValueText.Parent = LocalPlayerSection
+ValueText.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+ValueText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ValueText.BorderSizePixel = 0
+ValueText.Position = UDim2.new(0.656488538, 0, 0.228000239, 0)
+ValueText.Size = UDim2.new(0, 82, 0, 32)
+ValueText.Font = Enum.Font.SourceSans
+ValueText.PlaceholderColor3 = Color3.fromRGB(199, 199, 199)
+ValueText.PlaceholderText = "16 - 1500"
+ValueText.Text = ""
+ValueText.TextColor3 = Color3.fromRGB(255, 255, 255)
+ValueText.TextScaled = true
+ValueText.TextSize = 14.000
+ValueText.TextWrapped = true
+
+UICorner_20.CornerRadius = UDim.new(0, 5)
+UICorner_20.Parent = ValueText
+
+ProfilePicture_3.Name = "ProfilePicture"
+ProfilePicture_3.Parent = LocalPlayerSection
+ProfilePicture_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfilePicture_3.BackgroundTransparency = 1.000
+ProfilePicture_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfilePicture_3.BorderSizePixel = 0
+ProfilePicture_3.Position = UDim2.new(0.0572519079, 0, 0.391999781, 0)
+ProfilePicture_3.Size = UDim2.new(0, 48, 0, 40)
+ProfilePicture_3.Image = "rbxassetid://13288142767"
+
+UICorner_21.Parent = ProfilePicture_3
+
+Title_4.Name = "Title"
+Title_4.Parent = ProfilePicture_3
+Title_4.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Title_4.BackgroundTransparency = 1.000
+Title_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_4.BorderSizePixel = 0
+Title_4.Position = UDim2.new(1.15491235, 0, 0.189999387, 0)
+Title_4.Size = UDim2.new(0, 94, 0, 23)
+Title_4.Font = Enum.Font.SourceSansBold
+Title_4.Text = "JumpPower"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+
+UICorner_22.CornerRadius = UDim.new(0, 3)
+UICorner_22.Parent = Title_4
+
+ValueText2.Name = "ValueText2"
+ValueText2.Parent = LocalPlayerSection
+ValueText2.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+ValueText2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ValueText2.BorderSizePixel = 0
+ValueText2.Position = UDim2.new(0.656488538, 0, 0.412000239, 0)
+ValueText2.Size = UDim2.new(0, 82, 0, 32)
+ValueText2.Font = Enum.Font.SourceSans
+ValueText2.PlaceholderColor3 = Color3.fromRGB(199, 199, 199)
+ValueText2.PlaceholderText = "50 - 3000"
+ValueText2.Text = ""
+ValueText2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ValueText2.TextScaled = true
+ValueText2.TextSize = 14.000
+ValueText2.TextWrapped = true
+
+UICorner_23.CornerRadius = UDim.new(0, 5)
+UICorner_23.Parent = ValueText2
+
+Inf.Name = "Inf"
+Inf.Parent = LocalPlayerSection
+Inf.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Inf.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Inf.BorderSizePixel = 0
+Inf.ClipsDescendants = true
+Inf.Position = UDim2.new(0.0779414251, 0, 0.600000024, 0)
+Inf.Size = UDim2.new(0, 217, 0, 27)
+Inf.Font = Enum.Font.SourceSans
+Inf.Text = "Infinite Yield"
+Inf.TextColor3 = Color3.fromRGB(255, 255, 255)
+Inf.TextScaled = true
+Inf.TextSize = 14.000
+Inf.TextWrapped = true
+
+UICorner_24.CornerRadius = UDim.new(0, 12)
+UICorner_24.Parent = Inf
+
+AimbotSection.Name = "AimbotSection"
+AimbotSection.Parent = MainFrame
+AimbotSection.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+AimbotSection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimbotSection.BorderSizePixel = 0
+AimbotSection.Position = UDim2.new(0.354672343, 0, 0.133116886, 0)
+AimbotSection.Size = UDim2.new(0, 262, 0, 250)
+AimbotSection.Visible = false
+
+UICorner_25.Parent = AimbotSection
+
+SectionTitle_3.Name = "SectionTitle"
+SectionTitle_3.Parent = AimbotSection
+SectionTitle_3.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_3.BackgroundTransparency = 1.000
+SectionTitle_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_3.BorderSizePixel = 0
+SectionTitle_3.Size = UDim2.new(0, 125, 0, 35)
+SectionTitle_3.Font = Enum.Font.Unknown
+SectionTitle_3.Text = "-- Functions"
+SectionTitle_3.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_3.TextScaled = true
+SectionTitle_3.TextSize = 21.000
+SectionTitle_3.TextWrapped = true
+
+UICorner_26.CornerRadius = UDim.new(0, 3)
+UICorner_26.Parent = SectionTitle_3
+
+ProfilePicture_4.Name = "ProfilePicture"
+ProfilePicture_4.Parent = AimbotSection
+ProfilePicture_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfilePicture_4.BackgroundTransparency = 1.000
+ProfilePicture_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfilePicture_4.BorderSizePixel = 0
+ProfilePicture_4.Position = UDim2.new(0.0572519079, 0, 0.207999766, 0)
+ProfilePicture_4.Size = UDim2.new(0, 48, 0, 40)
+ProfilePicture_4.Image = "rbxassetid://2795572800"
+
+UICorner_27.Parent = ProfilePicture_4
+
+Title_5.Name = "Title"
+Title_5.Parent = ProfilePicture_4
+Title_5.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Title_5.BackgroundTransparency = 1.000
+Title_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_5.BorderSizePixel = 0
+Title_5.Position = UDim2.new(1.15491343, 0, 0.189999759, 0)
+Title_5.Size = UDim2.new(0, 102, 0, 23)
+Title_5.Font = Enum.Font.SourceSansBold
+Title_5.Text = "Aimbot"
+Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.TextScaled = true
+Title_5.TextSize = 14.000
+Title_5.TextWrapped = true
+
+UICorner_28.CornerRadius = UDim.new(0, 3)
+UICorner_28.Parent = Title_5
+
+ProfilePicture_5.Name = "ProfilePicture"
+ProfilePicture_5.Parent = AimbotSection
+ProfilePicture_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfilePicture_5.BackgroundTransparency = 1.000
+ProfilePicture_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfilePicture_5.BorderSizePixel = 0
+ProfilePicture_5.Position = UDim2.new(0.0572519079, 0, 0.391999781, 0)
+ProfilePicture_5.Size = UDim2.new(0, 48, 0, 40)
+ProfilePicture_5.Image = "rbxassetid://2795572800"
+
+UICorner_29.Parent = ProfilePicture_5
+
+Title_6.Name = "Title"
+Title_6.Parent = ProfilePicture_5
+Title_6.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Title_6.BackgroundTransparency = 1.000
+Title_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_6.BorderSizePixel = 0
+Title_6.Position = UDim2.new(1.15491235, 0, 0.189999387, 0)
+Title_6.Size = UDim2.new(0, 94, 0, 23)
+Title_6.Font = Enum.Font.SourceSansBold
+Title_6.Text = "Silent Aim"
+Title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_6.TextScaled = true
+Title_6.TextSize = 14.000
+Title_6.TextWrapped = true
+
+UICorner_30.CornerRadius = UDim.new(0, 3)
+UICorner_30.Parent = Title_6
+
+AimbotToggle.Name = "AimbotToggle"
+AimbotToggle.Parent = AimbotSection
+AimbotToggle.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+AimbotToggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimbotToggle.BorderSizePixel = 0
+AimbotToggle.Position = UDim2.new(0.625954211, 0, 0.211999744, 0)
+AimbotToggle.Size = UDim2.new(0, 48, 0, 39)
+AimbotToggle.Font = Enum.Font.SourceSans
+AimbotToggle.Text = ""
+AimbotToggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+AimbotToggle.TextSize = 14.000
+
+UICorner_31.CornerRadius = UDim.new(0, 5)
+UICorner_31.Parent = AimbotToggle
+
+ToggleButton2.Name = "ToggleButton2"
+ToggleButton2.Parent = AimbotSection
+ToggleButton2.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+ToggleButton2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ToggleButton2.BorderSizePixel = 0
+ToggleButton2.Position = UDim2.new(0.625954211, 0, 0.399999738, 0)
+ToggleButton2.Size = UDim2.new(0, 48, 0, 39)
+ToggleButton2.Font = Enum.Font.SourceSans
+ToggleButton2.Text = ""
+ToggleButton2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ToggleButton2.TextSize = 14.000
+
+UICorner_32.CornerRadius = UDim.new(0, 5)
+UICorner_32.Parent = ToggleButton2
+
+VisualsSection.Name = "VisualsSection"
+VisualsSection.Parent = MainFrame
+VisualsSection.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+VisualsSection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VisualsSection.BorderSizePixel = 0
+VisualsSection.Position = UDim2.new(0.354672343, 0, 0.133116886, 0)
+VisualsSection.Size = UDim2.new(0, 262, 0, 250)
+VisualsSection.Visible = false
+
+UICorner_33.Parent = VisualsSection
+
+SectionTitle_4.Name = "SectionTitle"
+SectionTitle_4.Parent = VisualsSection
+SectionTitle_4.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_4.BackgroundTransparency = 1.000
+SectionTitle_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_4.BorderSizePixel = 0
+SectionTitle_4.Position = UDim2.new(0.0257041864, 0, 0.0240000002, 0)
+SectionTitle_4.Size = UDim2.new(0, 161, 0, 23)
+SectionTitle_4.Font = Enum.Font.Unknown
+SectionTitle_4.Text = "-- ESP, Tracer, etc."
+SectionTitle_4.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_4.TextScaled = true
+SectionTitle_4.TextSize = 21.000
+SectionTitle_4.TextWrapped = true
+
+UICorner_34.CornerRadius = UDim.new(0, 3)
+UICorner_34.Parent = SectionTitle_4
+
+ProfilePicture_6.Name = "ProfilePicture"
+ProfilePicture_6.Parent = VisualsSection
+ProfilePicture_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfilePicture_6.BackgroundTransparency = 1.000
+ProfilePicture_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfilePicture_6.BorderSizePixel = 0
+ProfilePicture_6.Position = UDim2.new(0.0572519079, 0, 0.207999766, 0)
+ProfilePicture_6.Size = UDim2.new(0, 48, 0, 40)
+ProfilePicture_6.Image = "rbxassetid://2795572800"
+
+UICorner_35.Parent = ProfilePicture_6
+
+Title_7.Name = "Title"
+Title_7.Parent = ProfilePicture_6
+Title_7.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Title_7.BackgroundTransparency = 1.000
+Title_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_7.BorderSizePixel = 0
+Title_7.Position = UDim2.new(0.967413545, 0, 0.0899993852, 0)
+Title_7.Size = UDim2.new(0, 102, 0, 32)
+Title_7.Font = Enum.Font.SourceSansBold
+Title_7.Text = "ESP"
+Title_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_7.TextScaled = true
+Title_7.TextSize = 14.000
+Title_7.TextWrapped = true
+
+UICorner_36.CornerRadius = UDim.new(0, 3)
+UICorner_36.Parent = Title_7
+
+EspToggle.Name = "EspToggle"
+EspToggle.Parent = VisualsSection
+EspToggle.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+EspToggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EspToggle.BorderSizePixel = 0
+EspToggle.Position = UDim2.new(0.625954211, 0, 0.211999744, 0)
+EspToggle.Size = UDim2.new(0, 48, 0, 39)
+EspToggle.Font = Enum.Font.SourceSans
+EspToggle.Text = ""
+EspToggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+EspToggle.TextSize = 14.000
+
+UICorner_37.CornerRadius = UDim.new(0, 5)
+UICorner_37.Parent = EspToggle
+
+TracerToggle.Name = "TracerToggle"
+TracerToggle.Parent = VisualsSection
+TracerToggle.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+TracerToggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TracerToggle.BorderSizePixel = 0
+TracerToggle.Position = UDim2.new(0.625954211, 0, 0.440099865, 0)
+TracerToggle.Size = UDim2.new(0, 48, 0, 38)
+TracerToggle.Font = Enum.Font.SourceSans
+TracerToggle.Text = ""
+TracerToggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+TracerToggle.TextSize = 14.000
+
+UICorner_38.CornerRadius = UDim.new(0, 5)
+UICorner_38.Parent = TracerToggle
+
+ProfilePicture_7.Name = "ProfilePicture"
+ProfilePicture_7.Parent = VisualsSection
+ProfilePicture_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfilePicture_7.BackgroundTransparency = 1.000
+ProfilePicture_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfilePicture_7.BorderSizePixel = 0
+ProfilePicture_7.Position = UDim2.new(0.0572519079, 0, 0.435999751, 0)
+ProfilePicture_7.Size = UDim2.new(0, 48, 0, 41)
+ProfilePicture_7.Image = "rbxassetid://2795572800"
+
+UICorner_39.Parent = ProfilePicture_7
+
+Title_8.Name = "Title"
+Title_8.Parent = ProfilePicture_7
+Title_8.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Title_8.BackgroundTransparency = 1.000
+Title_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_8.BorderSizePixel = 0
+Title_8.Position = UDim2.new(0.967413604, 0, 0.0922492966, 0)
+Title_8.Size = UDim2.new(0, 102, 0, 33)
+Title_8.Font = Enum.Font.SourceSansBold
+Title_8.Text = "Tracers"
+Title_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_8.TextScaled = true
+Title_8.TextSize = 14.000
+Title_8.TextWrapped = true
+
+UICorner_40.CornerRadius = UDim.new(0, 3)
+UICorner_40.Parent = Title_8
+
+TeleportationSection.Name = "TeleportationSection"
+TeleportationSection.Parent = MainFrame
+TeleportationSection.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TeleportationSection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TeleportationSection.BorderSizePixel = 0
+TeleportationSection.Position = UDim2.new(0.354672343, 0, 0.133116886, 0)
+TeleportationSection.Size = UDim2.new(0, 262, 0, 250)
+TeleportationSection.Visible = false
+
+UICorner_41.Parent = TeleportationSection
+
+SectionTitle_5.Name = "SectionTitle"
+SectionTitle_5.Parent = TeleportationSection
+SectionTitle_5.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_5.BackgroundTransparency = 1.000
+SectionTitle_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_5.BorderSizePixel = 0
+SectionTitle_5.Position = UDim2.new(0.0267175566, 0, 0, 0)
+SectionTitle_5.Size = UDim2.new(0, 135, 0, 35)
+SectionTitle_5.Font = Enum.Font.Unknown
+SectionTitle_5.Text = "-- Teleportation"
+SectionTitle_5.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_5.TextScaled = true
+SectionTitle_5.TextSize = 21.000
+SectionTitle_5.TextWrapped = true
+
+UICorner_42.CornerRadius = UDim.new(0, 3)
+UICorner_42.Parent = SectionTitle_5
+
+PlayerFrame.Name = "PlayerFrame"
+PlayerFrame.Parent = TeleportationSection
+PlayerFrame.Active = true
+PlayerFrame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+PlayerFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerFrame.BorderSizePixel = 0
+PlayerFrame.Position = UDim2.new(0.0267175566, 0, 0.148000002, 0)
+PlayerFrame.Size = UDim2.new(0, 248, 0, 202)
+PlayerFrame.CanvasSize = UDim2.new(0, 0, 5, 15)
+PlayerFrame.ScrollBarThickness = 5
+
+TeleportToPlayer.Name = "TeleportToPlayer"
+TeleportToPlayer.Parent = PlayerFrame
+TeleportToPlayer.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+TeleportToPlayer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TeleportToPlayer.BorderSizePixel = 0
+TeleportToPlayer.ClipsDescendants = true
+TeleportToPlayer.Position = UDim2.new(0.0310575422, 0, 0.00598293543, 0)
+TeleportToPlayer.Size = UDim2.new(0, 232, 0, 39)
+TeleportToPlayer.Visible = false
+TeleportToPlayer.Font = Enum.Font.SourceSans
+TeleportToPlayer.Text = "Username"
+TeleportToPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+TeleportToPlayer.TextSize = 21.000
+
+UICorner_43.CornerRadius = UDim.new(0, 4)
+UICorner_43.Parent = TeleportToPlayer
+
+UIListLayout_2.Parent = PlayerFrame
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 2)
+
+CreditsSection.Name = "CreditsSection"
+CreditsSection.Parent = MainFrame
+CreditsSection.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+CreditsSection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CreditsSection.BorderSizePixel = 0
+CreditsSection.Position = UDim2.new(0.354672343, 0, 0.133116886, 0)
+CreditsSection.Size = UDim2.new(0, 262, 0, 250)
+CreditsSection.Visible = false
+
+UICorner_44.Parent = CreditsSection
+
+SectionTitle_6.Name = "SectionTitle"
+SectionTitle_6.Parent = CreditsSection
+SectionTitle_6.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_6.BackgroundTransparency = 1.000
+SectionTitle_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_6.BorderSizePixel = 0
+SectionTitle_6.Position = UDim2.new(0.0257041864, 0, 0.0240000002, 0)
+SectionTitle_6.Size = UDim2.new(0, 87, 0, 22)
+SectionTitle_6.Font = Enum.Font.Unknown
+SectionTitle_6.Text = "-- Credits"
+SectionTitle_6.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_6.TextScaled = true
+SectionTitle_6.TextSize = 21.000
+SectionTitle_6.TextWrapped = true
+
+UICorner_45.CornerRadius = UDim.new(0, 3)
+UICorner_45.Parent = SectionTitle_6
+
+SectionTitle_7.Name = "SectionTitle"
+SectionTitle_7.Parent = CreditsSection
+SectionTitle_7.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_7.BackgroundTransparency = 1.000
+SectionTitle_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_7.BorderSizePixel = 0
+SectionTitle_7.Position = UDim2.new(0.0801526755, 0, 0.879999995, 0)
+SectionTitle_7.Size = UDim2.new(0, 219, 0, 19)
+SectionTitle_7.Font = Enum.Font.Unknown
+SectionTitle_7.Text = "Credits to Winrar for making this ui!"
+SectionTitle_7.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_7.TextScaled = true
+SectionTitle_7.TextSize = 21.000
+SectionTitle_7.TextWrapped = true
+
+UICorner_46.CornerRadius = UDim.new(0, 3)
+UICorner_46.Parent = SectionTitle_7
+
+OwnerPFP.Name = "OwnerPFP"
+OwnerPFP.Parent = CreditsSection
+OwnerPFP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OwnerPFP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OwnerPFP.BorderSizePixel = 0
+OwnerPFP.Position = UDim2.new(0.0496183038, 0, 0.300000012, 0)
+OwnerPFP.Size = UDim2.new(0, 100, 0, 100)
+OwnerPFP.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_47.Parent = OwnerPFP
+
+SectionTitle_8.Name = "SectionTitle"
+SectionTitle_8.Parent = OwnerPFP
+SectionTitle_8.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_8.BackgroundTransparency = 1.000
+SectionTitle_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_8.BorderSizePixel = 0
+SectionTitle_8.Position = UDim2.new(-0.0632824674, 0, 1.04999995, 0)
+SectionTitle_8.Size = UDim2.new(0, 128, 0, 17)
+SectionTitle_8.Font = Enum.Font.Unknown
+SectionTitle_8.Text = "Ui Designer/Programmer"
+SectionTitle_8.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_8.TextScaled = true
+SectionTitle_8.TextSize = 21.000
+SectionTitle_8.TextWrapped = true
+
+UICorner_48.CornerRadius = UDim.new(0, 3)
+UICorner_48.Parent = SectionTitle_8
+
+SectionTitle_9.Name = "SectionTitle"
+SectionTitle_9.Parent = OwnerPFP
+SectionTitle_9.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_9.BackgroundTransparency = 1.000
+SectionTitle_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_9.BorderSizePixel = 0
+SectionTitle_9.Position = UDim2.new(-0.0632824674, 0, -0.25, 0)
+SectionTitle_9.Size = UDim2.new(0, 113, 0, 17)
+SectionTitle_9.Font = Enum.Font.Unknown
+SectionTitle_9.Text = "Winrarrrrr3005"
+SectionTitle_9.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_9.TextScaled = true
+SectionTitle_9.TextSize = 21.000
+SectionTitle_9.TextWrapped = true
+
+UICorner_49.CornerRadius = UDim.new(0, 3)
+UICorner_49.Parent = SectionTitle_9
+
+SectionTitle_10.Name = "SectionTitle"
+SectionTitle_10.Parent = OwnerPFP
+SectionTitle_10.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_10.BackgroundTransparency = 1.000
+SectionTitle_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_10.BorderSizePixel = 0
+SectionTitle_10.Position = UDim2.new(1.1967175, 0, -0.25, 0)
+SectionTitle_10.Size = UDim2.new(0, 113, 0, 17)
+SectionTitle_10.Font = Enum.Font.Unknown
+SectionTitle_10.Text = "Error51723"
+SectionTitle_10.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_10.TextScaled = true
+SectionTitle_10.TextSize = 21.000
+SectionTitle_10.TextWrapped = true
+
+UICorner_50.CornerRadius = UDim.new(0, 3)
+UICorner_50.Parent = SectionTitle_10
+
+HelperPFP.Name = "HelperPFP"
+HelperPFP.Parent = CreditsSection
+HelperPFP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HelperPFP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HelperPFP.BorderSizePixel = 0
+HelperPFP.Position = UDim2.new(0.53435111, 0, 0.300000012, 0)
+HelperPFP.Size = UDim2.new(0, 100, 0, 100)
+HelperPFP.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_51.Parent = HelperPFP
+
+SectionTitle_11.Name = "SectionTitle"
+SectionTitle_11.Parent = HelperPFP
+SectionTitle_11.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_11.BackgroundTransparency = 1.000
+SectionTitle_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_11.BorderSizePixel = 0
+SectionTitle_11.Position = UDim2.new(-0.0947375521, 0, 1.04999995, 0)
+SectionTitle_11.Size = UDim2.new(0, 123, 0, 17)
+SectionTitle_11.Font = Enum.Font.Unknown
+SectionTitle_11.Text = "Helper/Designer"
+SectionTitle_11.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_11.TextScaled = true
+SectionTitle_11.TextSize = 21.000
+SectionTitle_11.TextWrapped = true
+
+UICorner_52.CornerRadius = UDim.new(0, 3)
+UICorner_52.Parent = SectionTitle_11
+
+BorderFrame.Name = "BorderFrame"
+BorderFrame.Parent = MainFrame
+BorderFrame.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+BorderFrame.BackgroundTransparency = 0.700
+BorderFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BorderFrame.BorderSizePixel = 0
+BorderFrame.Position = UDim2.new(-0.0137931034, 0, -0.0292207785, 0)
+BorderFrame.Size = UDim2.new(0, 448, 0, 327)
+BorderFrame.ZIndex = 0
+
+UICorner_53.CornerRadius = UDim.new(0, 12)
+UICorner_53.Parent = BorderFrame
+
+GunModsSection.Name = "GunModsSection"
+GunModsSection.Parent = MainFrame
+GunModsSection.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+GunModsSection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GunModsSection.BorderSizePixel = 0
+GunModsSection.Position = UDim2.new(0.354672343, 0, 0.133116886, 0)
+GunModsSection.Size = UDim2.new(0, 262, 0, 250)
+GunModsSection.Visible = false
+
+UICorner_54.Parent = GunModsSection
+
+SectionTitle_12.Name = "SectionTitle"
+SectionTitle_12.Parent = GunModsSection
+SectionTitle_12.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_12.BackgroundTransparency = 1.000
+SectionTitle_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_12.BorderSizePixel = 0
+SectionTitle_12.Position = UDim2.new(0.0257041864, 0, 0.0280000009, 0)
+SectionTitle_12.Size = UDim2.new(0, 95, 0, 28)
+SectionTitle_12.Font = Enum.Font.Unknown
+SectionTitle_12.Text = "-- Gun Mods"
+SectionTitle_12.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_12.TextScaled = true
+SectionTitle_12.TextSize = 21.000
+SectionTitle_12.TextWrapped = true
+
+UICorner_55.CornerRadius = UDim.new(0, 3)
+UICorner_55.Parent = SectionTitle_12
+
+ToggleButton.Name = "ToggleButton"
+ToggleButton.Parent = GunModsSection
+ToggleButton.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+ToggleButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ToggleButton.BorderSizePixel = 0
+ToggleButton.Position = UDim2.new(0.625954211, 0, 0.211999744, 0)
+ToggleButton.Size = UDim2.new(0, 48, 0, 39)
+ToggleButton.Font = Enum.Font.SourceSans
+ToggleButton.Text = ""
+ToggleButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ToggleButton.TextSize = 14.000
+
+UICorner_56.CornerRadius = UDim.new(0, 5)
+UICorner_56.Parent = ToggleButton
+
+ProfilePicture_8.Name = "ProfilePicture"
+ProfilePicture_8.Parent = GunModsSection
+ProfilePicture_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfilePicture_8.BackgroundTransparency = 1.000
+ProfilePicture_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfilePicture_8.BorderSizePixel = 0
+ProfilePicture_8.Position = UDim2.new(0.0572519079, 0, 0.207999766, 0)
+ProfilePicture_8.Size = UDim2.new(0, 48, 0, 40)
+ProfilePicture_8.Image = "rbxassetid://11322415498"
+
+UICorner_57.Parent = ProfilePicture_8
+
+Title_9.Name = "Title"
+Title_9.Parent = ProfilePicture_8
+Title_9.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Title_9.BackgroundTransparency = 1.000
+Title_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_9.BorderSizePixel = 0
+Title_9.Position = UDim2.new(1, 0, 0.189999387, 0)
+Title_9.Size = UDim2.new(0, 101, 0, 24)
+Title_9.Font = Enum.Font.SourceSansBold
+Title_9.Text = "Gun Mods"
+Title_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_9.TextScaled = true
+Title_9.TextSize = 14.000
+Title_9.TextWrapped = true
+
+UICorner_58.CornerRadius = UDim.new(0, 3)
+UICorner_58.Parent = Title_9
+
+SettingSection.Name = "SettingSection"
+SettingSection.Parent = MainFrame
+SettingSection.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SettingSection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingSection.BorderSizePixel = 0
+SettingSection.Position = UDim2.new(0.354672343, 0, 0.133116886, 0)
+SettingSection.Size = UDim2.new(0, 262, 0, 250)
+SettingSection.Visible = false
+
+UICorner_59.Parent = SettingSection
+
+SectionTitle_13.Name = "SectionTitle"
+SectionTitle_13.Parent = SettingSection
+SectionTitle_13.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_13.BackgroundTransparency = 1.000
+SectionTitle_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_13.BorderSizePixel = 0
+SectionTitle_13.Position = UDim2.new(0, 0, 0.0280000009, 0)
+SectionTitle_13.Size = UDim2.new(0, 122, 0, 28)
+SectionTitle_13.Font = Enum.Font.Unknown
+SectionTitle_13.Text = "-- Settings"
+SectionTitle_13.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_13.TextScaled = true
+SectionTitle_13.TextSize = 21.000
+SectionTitle_13.TextWrapped = true
+
+UICorner_60.CornerRadius = UDim.new(0, 3)
+UICorner_60.Parent = SectionTitle_13
+
+SectionTitle_14.Name = "SectionTitle"
+SectionTitle_14.Parent = SettingSection
+SectionTitle_14.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_14.BackgroundTransparency = 1.000
+SectionTitle_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_14.BorderSizePixel = 0
+SectionTitle_14.Position = UDim2.new(0.0267175566, 0, 0.172000006, 0)
+SectionTitle_14.Size = UDim2.new(0, 135, 0, 35)
+SectionTitle_14.Font = Enum.Font.Unknown
+SectionTitle_14.Text = "Toggle Gui \"V\""
+SectionTitle_14.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_14.TextScaled = true
+SectionTitle_14.TextSize = 21.000
+SectionTitle_14.TextWrapped = true
+
+UICorner_61.CornerRadius = UDim.new(0, 3)
+UICorner_61.Parent = SectionTitle_14
+
+SectionTitle_15.Name = "SectionTitle"
+SectionTitle_15.Parent = SettingSection
+SectionTitle_15.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_15.BackgroundTransparency = 1.000
+SectionTitle_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_15.BorderSizePixel = 0
+SectionTitle_15.Position = UDim2.new(0.0267175566, 0, 0.312000006, 0)
+SectionTitle_15.Size = UDim2.new(0, 135, 0, 39)
+SectionTitle_15.Font = Enum.Font.Unknown
+SectionTitle_15.Text = "Destroy Gui \"H\""
+SectionTitle_15.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_15.TextScaled = true
+SectionTitle_15.TextSize = 21.000
+SectionTitle_15.TextWrapped = true
+
+UICorner_62.CornerRadius = UDim.new(0, 3)
+UICorner_62.Parent = SectionTitle_15
+
+KeySystem.Name = "KeySystem"
+KeySystem.Parent = Main2
+KeySystem.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+KeySystem.DisplayOrder = 2
+KeySystem.ResetOnSpawn = false
+
+KeyFrame.Name = "KeyFrame"
+KeyFrame.Parent = KeySystem
+KeyFrame.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+KeyFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyFrame.BorderSizePixel = 0
+KeyFrame.Position = UDim2.new(0.36889416, 0, 0.294261217, 0)
+KeyFrame.Size = UDim2.new(0, 435, 0, 308)
+KeyFrame.Visible = false
+KeyFrame.ZIndex = 2
+
+Title_10.Name = "Title"
+Title_10.Parent = KeyFrame
+Title_10.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Title_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_10.BorderSizePixel = 0
+Title_10.Position = UDim2.new(0.0206896551, 0, 0.0324675329, 0)
+Title_10.Size = UDim2.new(0, 420, 0, 24)
+Title_10.Font = Enum.Font.SourceSansBold
+Title_10.Text = "Avexy Hub - Key System"
+Title_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_10.TextScaled = true
+Title_10.TextSize = 14.000
+Title_10.TextWrapped = true
+
+UICorner_63.CornerRadius = UDim.new(0, 5)
+UICorner_63.Parent = Title_10
+
+UICorner_64.Parent = KeyFrame
+
+Buttons_2.Name = "Buttons"
+Buttons_2.Parent = KeyFrame
+Buttons_2.Active = true
+Buttons_2.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+Buttons_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Buttons_2.BorderSizePixel = 0
+Buttons_2.Position = UDim2.new(0.0206896551, 0, 0.198051944, 0)
+Buttons_2.Size = UDim2.new(0, 136, 0, 231)
+Buttons_2.CanvasSize = UDim2.new(0, 0, 3, 15)
+Buttons_2.ScrollBarThickness = 3
+
+KeyButton.Name = "KeyButton"
+KeyButton.Parent = Buttons_2
+KeyButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+KeyButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyButton.BorderSizePixel = 0
+KeyButton.ClipsDescendants = true
+KeyButton.Position = UDim2.new(0.0661764741, 0, 0.33439827, 0)
+KeyButton.Size = UDim2.new(0, 136, 0, 37)
+KeyButton.Font = Enum.Font.SourceSans
+KeyButton.Text = "Home - Key"
+KeyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyButton.TextSize = 21.000
+KeyButton.TextWrapped = true
+
+UICorner_65.CornerRadius = UDim.new(0, 2)
+UICorner_65.Parent = KeyButton
+
+UIListLayout_3.Parent = Buttons_2
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0, 3)
+
+SettingsButton_2.Name = "SettingsButton"
+SettingsButton_2.Parent = Buttons_2
+SettingsButton_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SettingsButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsButton_2.BorderSizePixel = 0
+SettingsButton_2.ClipsDescendants = true
+SettingsButton_2.Position = UDim2.new(0.0661764741, 0, 0.33439827, 0)
+SettingsButton_2.Size = UDim2.new(0, 136, 0, 37)
+SettingsButton_2.Font = Enum.Font.SourceSans
+SettingsButton_2.Text = "Settings"
+SettingsButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+SettingsButton_2.TextSize = 21.000
+SettingsButton_2.TextWrapped = true
+
+UICorner_66.CornerRadius = UDim.new(0, 2)
+UICorner_66.Parent = SettingsButton_2
+
+Title2_2.Name = "Title2"
+Title2_2.Parent = KeyFrame
+Title2_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Title2_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title2_2.BorderSizePixel = 0
+Title2_2.Position = UDim2.new(0.0206896551, 0, 0.133116886, 0)
+Title2_2.Size = UDim2.new(0, 136, 0, 19)
+Title2_2.Font = Enum.Font.SourceSansBold
+Title2_2.Text = "Key System"
+Title2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title2_2.TextScaled = true
+Title2_2.TextSize = 14.000
+Title2_2.TextWrapped = true
+
+UICorner_67.CornerRadius = UDim.new(0, 3)
+UICorner_67.Parent = Title2_2
+
+KeySection.Name = "KeySection"
+KeySection.Parent = KeyFrame
+KeySection.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+KeySection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeySection.BorderSizePixel = 0
+KeySection.Position = UDim2.new(0.354672343, 0, 0.133116886, 0)
+KeySection.Size = UDim2.new(0, 262, 0, 250)
+
+UICorner_68.Parent = KeySection
+
+Title_11.Name = "Title"
+Title_11.Parent = KeySection
+Title_11.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Title_11.BackgroundTransparency = 1.000
+Title_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_11.BorderSizePixel = 0
+Title_11.Position = UDim2.new(0, 0, 0.885116935, 0)
+Title_11.Size = UDim2.new(0, 166, 0, 22)
+Title_11.Font = Enum.Font.SourceSansBold
+Title_11.Text = "Username"
+Title_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_11.TextScaled = true
+Title_11.TextSize = 14.000
+Title_11.TextWrapped = true
+
+UICorner_69.CornerRadius = UDim.new(0, 3)
+UICorner_69.Parent = Title_11
+
+SectionTitle_16.Name = "SectionTitle"
+SectionTitle_16.Parent = KeySection
+SectionTitle_16.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_16.BackgroundTransparency = 1.000
+SectionTitle_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_16.BorderSizePixel = 0
+SectionTitle_16.Position = UDim2.new(-0.0114503819, 0, 0, 0)
+SectionTitle_16.Size = UDim2.new(0, 83, 0, 35)
+SectionTitle_16.Font = Enum.Font.Unknown
+SectionTitle_16.Text = "-- Home"
+SectionTitle_16.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_16.TextSize = 21.000
+SectionTitle_16.TextWrapped = true
+
+UICorner_70.CornerRadius = UDim.new(0, 3)
+UICorner_70.Parent = SectionTitle_16
+
+ProfilePicture_9.Name = "ProfilePicture"
+ProfilePicture_9.Parent = KeySection
+ProfilePicture_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfilePicture_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfilePicture_9.BorderSizePixel = 0
+ProfilePicture_9.Position = UDim2.new(0.343511462, 0, 0.0799999982, 0)
+ProfilePicture_9.Size = UDim2.new(0, 93, 0, 91)
+ProfilePicture_9.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_71.Parent = ProfilePicture_9
+
+KeyBox.Name = "KeyBox"
+KeyBox.Parent = KeySection
+KeyBox.BackgroundColor3 = Color3.fromRGB(108, 108, 108)
+KeyBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyBox.BorderSizePixel = 0
+KeyBox.Position = UDim2.new(0.278625965, 0, 0.536000013, 0)
+KeyBox.Size = UDim2.new(0, 127, 0, 28)
+KeyBox.Font = Enum.Font.SourceSans
+KeyBox.PlaceholderColor3 = Color3.fromRGB(140, 140, 140)
+KeyBox.PlaceholderText = "Put Key Here"
+KeyBox.Text = ""
+KeyBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyBox.TextScaled = true
+KeyBox.TextSize = 14.000
+KeyBox.TextWrapped = true
+
+UICorner_72.CornerRadius = UDim.new(0, 5)
+UICorner_72.Parent = KeyBox
+
+KeyButton_2.Name = "KeyButton"
+KeyButton_2.Parent = KeySection
+KeyButton_2.BackgroundColor3 = Color3.fromRGB(108, 108, 108)
+KeyButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyButton_2.BorderSizePixel = 0
+KeyButton_2.ClipsDescendants = true
+KeyButton_2.Position = UDim2.new(0.305343509, 0, 0.694398165, 0)
+KeyButton_2.Size = UDim2.new(0, 114, 0, 25)
+KeyButton_2.Font = Enum.Font.SourceSans
+KeyButton_2.Text = "Check Key"
+KeyButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyButton_2.TextSize = 21.000
+KeyButton_2.TextWrapped = true
+
+UICorner_73.CornerRadius = UDim.new(0, 4)
+UICorner_73.Parent = KeyButton_2
+
+SettingsSection.Name = "SettingsSection"
+SettingsSection.Parent = KeyFrame
+SettingsSection.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SettingsSection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsSection.BorderSizePixel = 0
+SettingsSection.Position = UDim2.new(0.354672343, 0, 0.133116886, 0)
+SettingsSection.Size = UDim2.new(0, 262, 0, 250)
+SettingsSection.Visible = false
+
+UICorner_74.Parent = SettingsSection
+
+Title_12.Name = "Title"
+Title_12.Parent = SettingsSection
+Title_12.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Title_12.BackgroundTransparency = 1.000
+Title_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_12.BorderSizePixel = 0
+Title_12.Position = UDim2.new(0, 0, 0.192000002, 0)
+Title_12.Size = UDim2.new(0, 166, 0, 23)
+Title_12.Font = Enum.Font.SourceSansBold
+Title_12.Text = "\"H\" to destroy gui"
+Title_12.TextColor3 = Color3.fromRGB(147, 147, 147)
+Title_12.TextScaled = true
+Title_12.TextSize = 14.000
+Title_12.TextWrapped = true
+
+UICorner_75.CornerRadius = UDim.new(0, 3)
+UICorner_75.Parent = Title_12
+
+SectionTitle_17.Name = "SectionTitle"
+SectionTitle_17.Parent = SettingsSection
+SectionTitle_17.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SectionTitle_17.BackgroundTransparency = 1.000
+SectionTitle_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_17.BorderSizePixel = 0
+SectionTitle_17.Position = UDim2.new(0.0572519079, 0, 0.0320000015, 0)
+SectionTitle_17.Size = UDim2.new(0, 95, 0, 27)
+SectionTitle_17.Font = Enum.Font.Unknown
+SectionTitle_17.Text = "-- Settings"
+SectionTitle_17.TextColor3 = Color3.fromRGB(153, 153, 153)
+SectionTitle_17.TextScaled = true
+SectionTitle_17.TextSize = 21.000
+SectionTitle_17.TextWrapped = true
+
+UICorner_76.CornerRadius = UDim.new(0, 3)
+UICorner_76.Parent = SectionTitle_17
+
+Notification.Name = "Notification"
+Notification.Parent = KeySystem
+Notification.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Notification.BackgroundTransparency = 0.300
+Notification.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Notification.BorderSizePixel = 0
+Notification.Position = UDim2.new(0.785000026, 0, 0.795000017, 0)
+Notification.Size = UDim2.new(0, 292, 0, 133)
+Notification.Visible = false
+
+displayNotificationMessage.Name = "displayNotificationMessage"
+displayNotificationMessage.Parent = Notification
+displayNotificationMessage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+displayNotificationMessage.BackgroundTransparency = 1.000
+displayNotificationMessage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+displayNotificationMessage.BorderSizePixel = 0
+displayNotificationMessage.Position = UDim2.new(0.0239726026, 0, 0.714285731, 0)
+displayNotificationMessage.Size = UDim2.new(0, 288, 0, 38)
+displayNotificationMessage.Font = Enum.Font.Unknown
+displayNotificationMessage.Text = "Welcome"
+displayNotificationMessage.TextColor3 = Color3.fromRGB(255, 255, 255)
+displayNotificationMessage.TextScaled = true
+displayNotificationMessage.TextSize = 14.000
+displayNotificationMessage.TextWrapped = true
+
+ImageLabel.Parent = Notification
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.0273972601, 0, 0.0601503775, 0)
+ImageLabel.Size = UDim2.new(0, 62, 0, 61)
+ImageLabel.Image = "rbxassetid://11401835376"
+
+UICorner_77.Parent = Notification
+
+-- Scripts:
+
+local function FLHW_fake_script() -- HomeButton.LocalScript 
+	local script = Instance.new('LocalScript', HomeButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.HomeSection.Visible = true
+		script.Parent.Parent.Parent.LocalPlayerSection.Visible = false
+		script.Parent.Parent.Parent.AimbotSection.Visible = false
+		script.Parent.Parent.Parent.VisualsSection.Visible = false
+		script.Parent.Parent.Parent.TeleportationSection.Visible = false
+		script.Parent.Parent.Parent.GunModsSection.Visible = false
+		script.Parent.Parent.Parent.SettingSection.Visible = false
+		script.Parent.Parent.Parent.CreditsSection.Visible = false
+	end)
+end
+coroutine.wrap(FLHW_fake_script)()
+local function PIAGYA_fake_script() -- HomeButton.HoverFunction 
+	local script = Instance.new('LocalScript', HomeButton)
+
+	local Button = script.Parent.Parent.Parent.Buttons.HomeButton
+	
+	local hoverColor = Color3.fromRGB(157, 58, 255) -- Purple (Hover Color)
+	local unhoverColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Unhover Color)
+	
+	local circleColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Circle Color)
+	local circleTransparency = 0.6 -- Circle Transparency (0 - 1)
+	
+	local circleDuration = 1 -- Duration of the circle effect in seconds
+	
+	local function onHover()
+		Button.BackgroundColor3 = hoverColor
+	end
+	
+	local function onUnhover()
+		Button.BackgroundColor3 = unhoverColor
+	end
+	
+	local function createCircleEffect()
+		local circle = Instance.new("ImageLabel")
+		circle.Name = "CircleEffect"
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		circle.Position = UDim2.new(0.5, 0, 0.5, 0)
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundTransparency = circleTransparency
+		circle.BackgroundColor3 = circleColor
+		circle.Parent = Button
+	
+		local fadeTween = game.TweenService:Create(circle, TweenInfo.new(circleDuration), { Size = UDim2.new(5, 0, 5, 0), BackgroundTransparency = 1 })
+		fadeTween:Play()
+	
+		fadeTween.Completed:Connect(function()
+			circle:Destroy()
+		end)
+	end
+	
+	Button.MouseEnter:Connect(onHover)
+	Button.MouseLeave:Connect(onUnhover)
+	Button.MouseButton1Click:Connect(createCircleEffect)
+	
+end
+coroutine.wrap(PIAGYA_fake_script)()
+local function EYCFKOK_fake_script() -- LocalPlayerButton.LocalScript 
+	local script = Instance.new('LocalScript', LocalPlayerButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.HomeSection.Visible = false
+		script.Parent.Parent.Parent.LocalPlayerSection.Visible = true
+		script.Parent.Parent.Parent.AimbotSection.Visible = false
+		script.Parent.Parent.Parent.VisualsSection.Visible = false
+		script.Parent.Parent.Parent.TeleportationSection.Visible = false
+		script.Parent.Parent.Parent.GunModsSection.Visible = false
+		script.Parent.Parent.Parent.SettingSection.Visible = false
+		script.Parent.Parent.Parent.CreditsSection.Visible = false
+	end)
+end
+coroutine.wrap(EYCFKOK_fake_script)()
+local function NQGFUQB_fake_script() -- LocalPlayerButton.HoverFunction 
+	local script = Instance.new('LocalScript', LocalPlayerButton)
+
+	local Button = script.Parent.Parent.Parent.Buttons.LocalPlayerButton
+	
+	local hoverColor = Color3.fromRGB(157, 58, 255) -- Purple (Hover Color)
+	local unhoverColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Unhover Color)
+	
+	local circleColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Circle Color)
+	local circleTransparency = 0.6 -- Circle Transparency (0 - 1)
+	
+	local circleDuration = 1 -- Duration of the circle effect in seconds
+	
+	local function onHover()
+		Button.BackgroundColor3 = hoverColor
+	end
+	
+	local function onUnhover()
+		Button.BackgroundColor3 = unhoverColor
+	end
+	
+	local function createCircleEffect()
+		local circle = Instance.new("ImageLabel")
+		circle.Name = "CircleEffect"
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		circle.Position = UDim2.new(0.5, 0, 0.5, 0)
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundTransparency = circleTransparency
+		circle.BackgroundColor3 = circleColor
+		circle.Parent = Button
+	
+		local fadeTween = game.TweenService:Create(circle, TweenInfo.new(circleDuration), { Size = UDim2.new(5, 0, 5, 0), BackgroundTransparency = 1 })
+		fadeTween:Play()
+	
+		fadeTween.Completed:Connect(function()
+			circle:Destroy()
+		end)
+	end
+	
+	Button.MouseEnter:Connect(onHover)
+	Button.MouseLeave:Connect(onUnhover)
+	Button.MouseButton1Click:Connect(createCircleEffect)
+	
+end
+coroutine.wrap(NQGFUQB_fake_script)()
+local function HPYWX_fake_script() -- AimbotButton.LocalScript 
+	local script = Instance.new('LocalScript', AimbotButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.HomeSection.Visible = false
+		script.Parent.Parent.Parent.LocalPlayerSection.Visible = false
+		script.Parent.Parent.Parent.AimbotSection.Visible = true
+		script.Parent.Parent.Parent.VisualsSection.Visible = false
+		script.Parent.Parent.Parent.TeleportationSection.Visible = false
+		script.Parent.Parent.Parent.GunModsSection.Visible = false
+		script.Parent.Parent.Parent.SettingSection.Visible = false
+		script.Parent.Parent.Parent.CreditsSection.Visible = false
+	end)
+end
+coroutine.wrap(HPYWX_fake_script)()
+local function QVMWH_fake_script() -- AimbotButton.HoverFunction 
+	local script = Instance.new('LocalScript', AimbotButton)
+
+	local Button = script.Parent.Parent.Parent.Buttons.AimbotButton
+	
+	local hoverColor = Color3.fromRGB(157, 58, 255) -- Purple (Hover Color)
+	local unhoverColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Unhover Color)
+	
+	local circleColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Circle Color)
+	local circleTransparency = 0.6 -- Circle Transparency (0 - 1)
+	
+	local circleDuration = 1 -- Duration of the circle effect in seconds
+	
+	local function onHover()
+		Button.BackgroundColor3 = hoverColor
+	end
+	
+	local function onUnhover()
+		Button.BackgroundColor3 = unhoverColor
+	end
+	
+	local function createCircleEffect()
+		local circle = Instance.new("ImageLabel")
+		circle.Name = "CircleEffect"
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		circle.Position = UDim2.new(0.5, 0, 0.5, 0)
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundTransparency = circleTransparency
+		circle.BackgroundColor3 = circleColor
+		circle.Parent = Button
+	
+		local fadeTween = game.TweenService:Create(circle, TweenInfo.new(circleDuration), { Size = UDim2.new(5, 0, 5, 0), BackgroundTransparency = 1 })
+		fadeTween:Play()
+	
+		fadeTween.Completed:Connect(function()
+			circle:Destroy()
+		end)
+	end
+	
+	Button.MouseEnter:Connect(onHover)
+	Button.MouseLeave:Connect(onUnhover)
+	Button.MouseButton1Click:Connect(createCircleEffect)
+	
+end
+coroutine.wrap(QVMWH_fake_script)()
+local function AUZIUE_fake_script() -- VisualButton.LocalScript 
+	local script = Instance.new('LocalScript', VisualButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.HomeSection.Visible = false
+		script.Parent.Parent.Parent.LocalPlayerSection.Visible = false
+		script.Parent.Parent.Parent.AimbotSection.Visible = false
+		script.Parent.Parent.Parent.VisualsSection.Visible = true
+		script.Parent.Parent.Parent.TeleportationSection.Visible = false
+		script.Parent.Parent.Parent.GunModsSection.Visible = false
+		script.Parent.Parent.Parent.SettingSection.Visible = false
+		script.Parent.Parent.Parent.CreditsSection.Visible = false
+	end)
+end
+coroutine.wrap(AUZIUE_fake_script)()
+local function LUZBJS_fake_script() -- VisualButton.HoverFunction 
+	local script = Instance.new('LocalScript', VisualButton)
+
+	local Button = script.Parent.Parent.Parent.Buttons.VisualButton
+	
+	local hoverColor = Color3.fromRGB(157, 58, 255) -- Purple (Hover Color)
+	local unhoverColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Unhover Color)
+	
+	local circleColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Circle Color)
+	local circleTransparency = 0.6 -- Circle Transparency (0 - 1)
+	
+	local circleDuration = 1 -- Duration of the circle effect in seconds
+	
+	local function onHover()
+		Button.BackgroundColor3 = hoverColor
+	end
+	
+	local function onUnhover()
+		Button.BackgroundColor3 = unhoverColor
+	end
+	
+	local function createCircleEffect()
+		local circle = Instance.new("ImageLabel")
+		circle.Name = "CircleEffect"
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		circle.Position = UDim2.new(0.5, 0, 0.5, 0)
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundTransparency = circleTransparency
+		circle.BackgroundColor3 = circleColor
+		circle.Parent = Button
+	
+		local fadeTween = game.TweenService:Create(circle, TweenInfo.new(circleDuration), { Size = UDim2.new(5, 0, 5, 0), BackgroundTransparency = 1 })
+		fadeTween:Play()
+	
+		fadeTween.Completed:Connect(function()
+			circle:Destroy()
+		end)
+	end
+	
+	Button.MouseEnter:Connect(onHover)
+	Button.MouseLeave:Connect(onUnhover)
+	Button.MouseButton1Click:Connect(createCircleEffect)
+	
+end
+coroutine.wrap(LUZBJS_fake_script)()
+local function ALXFV_fake_script() -- GunModsButton.LocalScript 
+	local script = Instance.new('LocalScript', GunModsButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.HomeSection.Visible = false
+		script.Parent.Parent.Parent.LocalPlayerSection.Visible = false
+		script.Parent.Parent.Parent.AimbotSection.Visible = false
+		script.Parent.Parent.Parent.VisualsSection.Visible = false
+		script.Parent.Parent.Parent.TeleportationSection.Visible = false
+		script.Parent.Parent.Parent.GunModsSection.Visible = true
+		script.Parent.Parent.Parent.SettingSection.Visible = false
+		script.Parent.Parent.Parent.CreditsSection.Visible = false
+	end)
+end
+coroutine.wrap(ALXFV_fake_script)()
+local function OPTSYQZ_fake_script() -- GunModsButton.HoverFunction 
+	local script = Instance.new('LocalScript', GunModsButton)
+
+	local Button = script.Parent.Parent.Parent.Buttons.GunModsButton
+	
+	local hoverColor = Color3.fromRGB(157, 58, 255) -- Purple (Hover Color)
+	local unhoverColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Unhover Color)
+	
+	local circleColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Circle Color)
+	local circleTransparency = 0.6 -- Circle Transparency (0 - 1)
+	
+	local circleDuration = 1 -- Duration of the circle effect in seconds
+	
+	local function onHover()
+		Button.BackgroundColor3 = hoverColor
+	end
+	
+	local function onUnhover()
+		Button.BackgroundColor3 = unhoverColor
+	end
+	
+	local function createCircleEffect()
+		local circle = Instance.new("ImageLabel")
+		circle.Name = "CircleEffect"
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		circle.Position = UDim2.new(0.5, 0, 0.5, 0)
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundTransparency = circleTransparency
+		circle.BackgroundColor3 = circleColor
+		circle.Parent = Button
+	
+		local fadeTween = game.TweenService:Create(circle, TweenInfo.new(circleDuration), { Size = UDim2.new(5, 0, 5, 0), BackgroundTransparency = 1 })
+		fadeTween:Play()
+	
+		fadeTween.Completed:Connect(function()
+			circle:Destroy()
+		end)
+	end
+	
+	Button.MouseEnter:Connect(onHover)
+	Button.MouseLeave:Connect(onUnhover)
+	Button.MouseButton1Click:Connect(createCircleEffect)
+	
+end
+coroutine.wrap(OPTSYQZ_fake_script)()
+local function QTGANOV_fake_script() -- TeleportationButton.LocalScript 
+	local script = Instance.new('LocalScript', TeleportationButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.HomeSection.Visible = false
+		script.Parent.Parent.Parent.LocalPlayerSection.Visible = false
+		script.Parent.Parent.Parent.AimbotSection.Visible = false
+		script.Parent.Parent.Parent.VisualsSection.Visible = false
+		script.Parent.Parent.Parent.TeleportationSection.Visible = true
+		script.Parent.Parent.Parent.GunModsSection.Visible = false
+		script.Parent.Parent.Parent.SettingSection.Visible = false
+		script.Parent.Parent.Parent.CreditsSection.Visible = false
+	end)
+end
+coroutine.wrap(QTGANOV_fake_script)()
+local function QPXMTL_fake_script() -- TeleportationButton.HoverFunction 
+	local script = Instance.new('LocalScript', TeleportationButton)
+
+	local Button = script.Parent.Parent.Parent.Buttons.TeleportationButton
+	
+	local hoverColor = Color3.fromRGB(157, 58, 255) -- Purple (Hover Color)
+	local unhoverColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Unhover Color)
+	
+	local circleColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Circle Color)
+	local circleTransparency = 0.6 -- Circle Transparency (0 - 1)
+	
+	local circleDuration = 1 -- Duration of the circle effect in seconds
+	
+	local function onHover()
+		Button.BackgroundColor3 = hoverColor
+	end
+	
+	local function onUnhover()
+		Button.BackgroundColor3 = unhoverColor
+	end
+	
+	local function createCircleEffect()
+		local circle = Instance.new("ImageLabel")
+		circle.Name = "CircleEffect"
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		circle.Position = UDim2.new(0.5, 0, 0.5, 0)
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundTransparency = circleTransparency
+		circle.BackgroundColor3 = circleColor
+		circle.Parent = Button
+	
+		local fadeTween = game.TweenService:Create(circle, TweenInfo.new(circleDuration), { Size = UDim2.new(5, 0, 5, 0), BackgroundTransparency = 1 })
+		fadeTween:Play()
+	
+		fadeTween.Completed:Connect(function()
+			circle:Destroy()
+		end)
+	end
+	
+	Button.MouseEnter:Connect(onHover)
+	Button.MouseLeave:Connect(onUnhover)
+	Button.MouseButton1Click:Connect(createCircleEffect)
+	
+end
+coroutine.wrap(QPXMTL_fake_script)()
+local function VOBWTMU_fake_script() -- SettingsButton.LocalScript 
+	local script = Instance.new('LocalScript', SettingsButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.HomeSection.Visible = false
+		script.Parent.Parent.Parent.LocalPlayerSection.Visible = false
+		script.Parent.Parent.Parent.AimbotSection.Visible = false
+		script.Parent.Parent.Parent.VisualsSection.Visible = false
+		script.Parent.Parent.Parent.TeleportationSection.Visible = false
+		script.Parent.Parent.Parent.GunModsSection.Visible = false
+		script.Parent.Parent.Parent.SettingSection.Visible = true
+		script.Parent.Parent.Parent.CreditsSection.Visible = false
+	end)
+end
+coroutine.wrap(VOBWTMU_fake_script)()
+local function MWNBYLY_fake_script() -- SettingsButton.HoverFunction 
+	local script = Instance.new('LocalScript', SettingsButton)
+
+	local Button = script.Parent.Parent.Parent.Buttons.SettingsButton
+	
+	local hoverColor = Color3.fromRGB(157, 58, 255) -- Purple (Hover Color)
+	local unhoverColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Unhover Color)
+	
+	local circleColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Circle Color)
+	local circleTransparency = 0.6 -- Circle Transparency (0 - 1)
+	
+	local circleDuration = 1 -- Duration of the circle effect in seconds
+	
+	local function onHover()
+		Button.BackgroundColor3 = hoverColor
+	end
+	
+	local function onUnhover()
+		Button.BackgroundColor3 = unhoverColor
+	end
+	
+	local function createCircleEffect()
+		local circle = Instance.new("ImageLabel")
+		circle.Name = "CircleEffect"
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		circle.Position = UDim2.new(0.5, 0, 0.5, 0)
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundTransparency = circleTransparency
+		circle.BackgroundColor3 = circleColor
+		circle.Parent = Button
+	
+		local fadeTween = game.TweenService:Create(circle, TweenInfo.new(circleDuration), { Size = UDim2.new(5, 0, 5, 0), BackgroundTransparency = 1 })
+		fadeTween:Play()
+	
+		fadeTween.Completed:Connect(function()
+			circle:Destroy()
+		end)
+	end
+	
+	Button.MouseEnter:Connect(onHover)
+	Button.MouseLeave:Connect(onUnhover)
+	Button.MouseButton1Click:Connect(createCircleEffect)
+	
+end
+coroutine.wrap(MWNBYLY_fake_script)()
+local function XLRMGV_fake_script() -- CreditsButton.LocalScript 
+	local script = Instance.new('LocalScript', CreditsButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.HomeSection.Visible = false
+		script.Parent.Parent.Parent.LocalPlayerSection.Visible = false
+		script.Parent.Parent.Parent.AimbotSection.Visible = false
+		script.Parent.Parent.Parent.VisualsSection.Visible = false
+		script.Parent.Parent.Parent.TeleportationSection.Visible = false
+		script.Parent.Parent.Parent.GunModsSection.Visible = false
+		script.Parent.Parent.Parent.SettingSection.Visible = false
+		script.Parent.Parent.Parent.CreditsSection.Visible = true
+	end)
+end
+coroutine.wrap(XLRMGV_fake_script)()
+local function UQPSD_fake_script() -- CreditsButton.HoverFunction 
+	local script = Instance.new('LocalScript', CreditsButton)
+
+	local Button = script.Parent.Parent.Parent.Buttons.CreditsButton
+	
+	local hoverColor = Color3.fromRGB(157, 58, 255) -- Purple (Hover Color)
+	local unhoverColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Unhover Color)
+	
+	local circleColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Circle Color)
+	local circleTransparency = 0.6 -- Circle Transparency (0 - 1)
+	
+	local circleDuration = 1 -- Duration of the circle effect in seconds
+	
+	local function onHover()
+		Button.BackgroundColor3 = hoverColor
+	end
+	
+	local function onUnhover()
+		Button.BackgroundColor3 = unhoverColor
+	end
+	
+	local function createCircleEffect()
+		local circle = Instance.new("ImageLabel")
+		circle.Name = "CircleEffect"
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		circle.Position = UDim2.new(0.5, 0, 0.5, 0)
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundTransparency = circleTransparency
+		circle.BackgroundColor3 = circleColor
+		circle.Parent = Button
+	
+		local fadeTween = game.TweenService:Create(circle, TweenInfo.new(circleDuration), { Size = UDim2.new(5, 0, 5, 0), BackgroundTransparency = 1 })
+		fadeTween:Play()
+	
+		fadeTween.Completed:Connect(function()
+			circle:Destroy()
+		end)
+	end
+	
+	Button.MouseEnter:Connect(onHover)
+	Button.MouseLeave:Connect(onUnhover)
+	Button.MouseButton1Click:Connect(createCircleEffect)
+	
+end
+coroutine.wrap(UQPSD_fake_script)()
+local function DAHUFL_fake_script() -- Title_2.Name 
+	local script = Instance.new('LocalScript', Title_2)
+
+	local player = game.Players.LocalPlayer.Name
+	local text = script.Parent.Parent.Title
+	
+	
+	text.Text = "Weclome, "..player.."!"
+end
+coroutine.wrap(DAHUFL_fake_script)()
+local function MKVWZO_fake_script() -- ProfilePicture.Profile 
+	local script = Instance.new('LocalScript', ProfilePicture)
+
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local profilePictureLabel = script.Parent.Parent.ProfilePicture -- Replace "script.Parent.Parent.ProfilePicture" with the path to your ImageLabel
+	
+	-- Function to set the profile picture of the local player
+	local function setProfilePicture()
+		-- Check if the LocalPlayer exists and has a character
+		if LocalPlayer and LocalPlayer.Character then
+			-- Get the UserId of the local player
+			local userId = LocalPlayer.UserId
+	
+			-- Set the profile picture of the ImageLabel to the Roblox website URL
+			profilePictureLabel.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. tostring(userId) .. "&width=420&height=420&format=png"
+		end
+	end
+	
+	-- Call the function to set the profile picture initially
+	setProfilePicture()
+	
+	-- Connect the function to the CharacterAdded event in case the character changes
+	LocalPlayer.CharacterAdded:Connect(setProfilePicture)
+	
+end
+coroutine.wrap(MKVWZO_fake_script)()
+local function TAVAM_fake_script() -- ValueText.Speed 
+	local script = Instance.new('LocalScript', ValueText)
+
+	local textBox = script.Parent.Parent.ValueText
+	
+	local function clamp(value, min, max)
+		return math.max(min, math.min(max, value))
+	end
+	
+	local function onValueEntered()
+		local valueText = textBox.Text
+		local walkSpeed = tonumber(valueText)
+	
+		
+		if walkSpeed then
+			
+			walkSpeed = clamp(walkSpeed, 16, 1500)
+	
+			
+			textBox.Text = tostring(walkSpeed)
+	
+			
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = walkSpeed
+		end
+	end
+	
+	textBox.FocusLost:Connect(onValueEntered)
+	
+end
+coroutine.wrap(TAVAM_fake_script)()
+local function XLOKJLC_fake_script() -- ValueText2.JumpPower 
+	local script = Instance.new('LocalScript', ValueText2)
+
+	local textBox = script.Parent.Parent.ValueText2 
+	
+	local function clamp(value, min, max)
+		return math.max(min, math.min(max, value))
+	end
+	
+	local function onValueEntered()
+		local valueText = textBox.Text
+		local jumpPower = tonumber(valueText)
+	
+		
+		if jumpPower then
+			
+			jumpPower = clamp(jumpPower, 50, 3000)
+	
+			
+			textBox.Text = tostring(jumpPower)
+	
+			
+			local humanoid = game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+			if humanoid then
+				humanoid.JumpPower = jumpPower
+			end
+		end
+	end
+	
+	textBox.FocusLost:Connect(onValueEntered)
+	
+end
+coroutine.wrap(XLOKJLC_fake_script)()
+local function KEEJHO_fake_script() -- Inf.HoverColor 
+	local script = Instance.new('LocalScript', Inf)
+
+	local Button = script.Parent.Parent.Parent.LocalPlayerSection.Inf
+	
+	local circleColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Circle Color)
+	local circleTransparency = 0.6 -- Circle Transparency (0 - 1)
+	
+	local circleDuration = 1 -- Duration of the circle effect in seconds
+	
+	local function createCircleEffect()
+		local circle = Instance.new("ImageLabel")
+		circle.Name = "CircleEffect"
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		circle.Position = UDim2.new(0.5, 0, 0.5, 0)
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundTransparency = circleTransparency
+		circle.BackgroundColor3 = circleColor
+		circle.Parent = Button
+	
+		local fadeTween = game.TweenService:Create(circle, TweenInfo.new(circleDuration), { Size = UDim2.new(5, 0, 5, 0), BackgroundTransparency = 1 })
+		fadeTween:Play()
+	
+		fadeTween.Completed:Connect(function()
+			circle:Destroy()
+		end)
+	end
+	
+	Button.MouseButton1Click:Connect(createCircleEffect)
+	
+end
+coroutine.wrap(KEEJHO_fake_script)()
+local function ZWYVQ_fake_script() -- Inf.Infinite 
+	local script = Instance.new('LocalScript', Inf)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+	
+end
+coroutine.wrap(ZWYVQ_fake_script)()
+-- AimbotToggle.Bot is disabled.
+-- ToggleButton2.EasyAim is disabled.
+local function SEXCYL_fake_script() -- EspToggle.ESP 
+	local script = Instance.new('LocalScript', EspToggle)
+
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local Camera = workspace.CurrentCamera
+	local RunService = game:GetService("RunService")
+	
+	local ESPSettings = {
+		BoxColor = Color3.fromRGB(255, 255, 255), -- Faded gray color for the box
+		BoxTransparency = 0.5, -- Transparency of the box
+		FilledColor = Color3.fromRGB(192, 192, 192), -- Light gray color for the filled box
+		FilledTransparency = 0.6, -- Transparency of the filled box
+		HealthBarColor = Color3.fromRGB(0, 255, 0), -- Bright green color for the health bar
+		HealthBarHeight = 2, -- Height of the health bar
+		DamageBackgroundColor = Color3.fromRGB(0, 0, 0), -- Black color for the background when taking damage
+		DeathFilledColor = Color3.fromRGB(0, 0, 0), -- Black color to fill the health bar when the player dies
+	}
+	
+	local ESPObjects = {}
+	local hasJoined = false
+	local espEnabled = false
+	
+	local function CreateESP(player)
+		local espBox = Drawing.new("Square")
+		espBox.Visible = false
+		espBox.Color = ESPSettings.BoxColor
+		espBox.Transparency = ESPSettings.BoxTransparency
+		espBox.Filled = false
+		espBox.Thickness = 3
+	
+		local filledBox = Drawing.new("Square")
+		filledBox.Visible = false
+		filledBox.Color = ESPSettings.FilledColor
+		filledBox.Transparency = ESPSettings.FilledTransparency
+		filledBox.Filled = true
+	
+		local healthBar = Drawing.new("Square")
+		healthBar.Visible = false
+		healthBar.Color = ESPSettings.HealthBarColor
+		healthBar.Transparency = ESPSettings.FilledTransparency
+		healthBar.Filled = true
+	
+		ESPObjects[player] = {
+			Box = espBox,
+			FilledBox = filledBox,
+			HealthBar = healthBar,
+			LastHealth = player.Character and player.Character:FindFirstChild("Humanoid") and player.Character.Humanoid.Health
+		}
+	end
+	
+	local function RemoveESP(player)
+		local playerObj = ESPObjects[player]
+		if playerObj then
+			playerObj.Box:Remove()
+			playerObj.FilledBox:Remove()
+			playerObj.HealthBar:Remove()
+			ESPObjects[player] = nil
+		end
+	end
+	
+	local function UpdateESP(player)
+		local playerObj = ESPObjects[player]
+		local humanoidRootPart = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+		local box = playerObj and playerObj.Box
+		local filledBox = playerObj and playerObj.FilledBox
+		local healthBar = playerObj and playerObj.HealthBar
+	
+		if humanoidRootPart and box and filledBox and healthBar then
+			local head = player.Character:FindFirstChild("Head")
+			local headPosition = head and head.Position
+	
+			if headPosition then
+				local headScreenPos, headOnScreen = Camera:WorldToViewportPoint(headPosition)
+	
+				if headOnScreen then
+					local distance = (Camera.CFrame.Position - humanoidRootPart.Position).Magnitude
+					local boxSize = math.clamp(5 * (Camera.ViewportSize.Y / (2.5 * math.tan(math.rad(Camera.FieldOfView) / 2) * distance)), 2, math.huge)
+					local healthPercent = player.Character.Humanoid.Health / player.Character.Humanoid.MaxHealth
+					local lastHealth = playerObj.LastHealth or player.Character.Humanoid.Health
+	
+					box.Size = Vector2.new(boxSize, boxSize * 2)
+					box.Position = Vector2.new(headScreenPos.X - boxSize / 2, headScreenPos.Y - boxSize)
+					box.Visible = espEnabled
+	
+					if healthPercent < lastHealth then
+						local healthDelta = lastHealth - healthPercent
+						local fillHeight = healthDelta * boxSize * 2
+						filledBox.Size = Vector2.new(boxSize, fillHeight)
+						filledBox.Position = Vector2.new(headScreenPos.X - boxSize / 2, headScreenPos.Y - boxSize + fillHeight)
+						filledBox.Color = ESPSettings.DamageBackgroundColor
+						filledBox.Visible = true
+						healthBar.Visible = false
+					else
+						filledBox.Size = Vector2.new(boxSize, boxSize * 2 * healthPercent)
+						filledBox.Position = Vector2.new(headScreenPos.X - boxSize / 2, headScreenPos.Y - boxSize)
+						filledBox.Color = ESPSettings.FilledColor
+						filledBox.Visible = espEnabled
+						healthBar.Size = Vector2.new(ESPSettings.HealthBarHeight, boxSize * 2 * healthPercent)
+						healthBar.Position = Vector2.new(headScreenPos.X - boxSize / 2 - ESPSettings.HealthBarHeight - 2, headScreenPos.Y - boxSize)
+						healthBar.Visible = espEnabled
+					end
+	
+					playerObj.LastHealth = healthPercent
+				else
+					box.Visible = false
+					filledBox.Visible = false
+					healthBar.Visible = false
+				end
+			else
+				box.Visible = false
+				filledBox.Visible = false
+				healthBar.Visible = false
+			end
+		else
+			box.Visible = false
+			filledBox.Visible = false
+			healthBar.Visible = false
+		end
+	end
+	
+	local function UpdateAllESP()
+		for player, _ in pairs(ESPObjects) do
+			UpdateESP(player)
+		end
+	end
+	
+	local function enableESP()
+		espEnabled = true
+		UpdateAllESP()
+	end
+	
+	local function disableESP()
+		espEnabled = false
+		UpdateAllESP()
+	end
+	
+	-- Create ESP for each player
+	for _, player in ipairs(Players:GetPlayers()) do
+		if player ~= LocalPlayer then
+			CreateESP(player)
+		end
+	end
+	
+	-- Update ESP when new players join
+	Players.PlayerAdded:Connect(function(player)
+		if player == LocalPlayer and not hasJoined then
+			hasJoined = true
+			return
+		end
+		if player ~= LocalPlayer then
+			CreateESP(player)
+		end
+	end)
+	
+	-- Update ESP when players leave
+	Players.PlayerRemoving:Connect(function(player)
+		RemoveESP(player)
+	end)
+	
+	local ESPButton = script.Parent.Parent.ESPToggle -- Replace this with the path to your ESP ToggleButton
+	
+	local onColor = Color3.fromRGB(15, 157, 208)
+	local offColor = Color3.fromRGB(109, 109, 109)
+	
+	local function updateToggleButton(button, state)
+		button.BackgroundColor3 = state and onColor or offColor
+	end
+	
+	ESPButton.MouseButton1Click:Connect(function()
+		espEnabled = not espEnabled
+		updateToggleButton(ESPButton, espEnabled)
+		UpdateAllESP()
+	end)
+	
+	updateToggleButton(ESPButton, espEnabled)
+	
+	-- Regularly update ESP when it is enabled
+	RunService.RenderStepped:Connect(function()
+		if espEnabled then
+			UpdateAllESP()
+		end
+	end)
+	
+end
+coroutine.wrap(SEXCYL_fake_script)()
+local function JLHFWM_fake_script() -- TracerToggle.TRACER 
+	local script = Instance.new('LocalScript', TracerToggle)
+
+	local Players = game:GetService("Players")
+	local Camera = workspace.CurrentCamera
+	local RunService = game:GetService("RunService")
+	
+	local TracerSettings = {
+		TracerColor = Color3.fromRGB(255, 0, 0), -- Red color for the tracers
+		TracerTransparency = 0.5, -- Transparency of the tracers
+	}
+	
+	local TracerObjects = {}
+	local hasJoined = false
+	local tracerEnabled = false
+	
+	local function CreateTracer(player)
+		local tracer = Drawing.new("Line")
+		tracer.Visible = false
+		tracer.Color = TracerSettings.TracerColor
+		tracer.Transparency = TracerSettings.TracerTransparency
+		tracer.Thickness = 1
+		TracerObjects[player] = { Tracer = tracer }
+	end
+	
+	local function RemoveTracer(player)
+		local playerObj = TracerObjects[player]
+		if playerObj then
+			playerObj.Tracer:Remove()
+			TracerObjects[player] = nil
+		end
+	end
+	
+	local function UpdateTracer(player)
+		local playerObj = TracerObjects[player]
+		local humanoidRootPart = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+		local tracer = playerObj and playerObj.Tracer
+	
+		if humanoidRootPart and tracer then
+			if player == Players.LocalPlayer then
+				tracer.Visible = false -- Skip drawing the tracer for the local player
+				return
+			end
+	
+			local head = player.Character:FindFirstChild("Head")
+			local headPosition = head and head.Position
+	
+			if headPosition then
+				local headScreenPos, headOnScreen = Camera:WorldToViewportPoint(headPosition)
+	
+				if headOnScreen and player.Team ~= Players.LocalPlayer.Team then
+					tracer.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+					tracer.To = Vector2.new(headScreenPos.X, headScreenPos.Y)
+					tracer.Visible = tracerEnabled
+				else
+					tracer.Visible = false
+				end
+			else
+				tracer.Visible = false
+			end
+		else
+			tracer.Visible = false
+		end
+	end
+	
+	local function UpdateAllTracers()
+		for player, _ in pairs(TracerObjects) do
+			UpdateTracer(player)
+		end
+	end
+	
+	local function enableTracers()
+		tracerEnabled = true
+		UpdateAllTracers()
+	end
+	
+	local function disableTracers()
+		tracerEnabled = false
+		UpdateAllTracers()
+	end
+	
+	-- Create Tracer for each player
+	for _, player in ipairs(Players:GetPlayers()) do
+		if player ~= Players.LocalPlayer and player.Team ~= Players.LocalPlayer.Team then
+			CreateTracer(player)
+		end
+	end
+	
+	-- Update Tracer when new players join
+	Players.PlayerAdded:Connect(function(player)
+		if player == Players.LocalPlayer and not hasJoined then
+			hasJoined = true
+			return
+		end
+		if player ~= Players.LocalPlayer and player.Team ~= Players.LocalPlayer.Team then
+			CreateTracer(player)
+		end
+	end)
+	
+	-- Update Tracer when players leave
+	Players.PlayerRemoving:Connect(function(player)
+		RemoveTracer(player)
+	end)
+	
+	local TracerButton = script.Parent.Parent.TracerToggle -- Replace this with the path to your Tracer ToggleButton
+	
+	local onColor = Color3.fromRGB(15, 157, 208)
+	local offColor = Color3.fromRGB(109, 109, 109)
+	
+	local function updateToggleButton(button, state)
+		button.BackgroundColor3 = state and onColor or offColor
+	end
+	
+	TracerButton.MouseButton1Click:Connect(function()
+		tracerEnabled = not tracerEnabled
+		updateToggleButton(TracerButton, tracerEnabled)
+		UpdateAllTracers()
+	end)
+	
+	updateToggleButton(TracerButton, tracerEnabled)
+	
+	-- Regularly update Tracers when they are enabled
+	RunService.RenderStepped:Connect(function()
+		if tracerEnabled then
+			UpdateAllTracers()
+		end
+	end)
+	
+end
+coroutine.wrap(JLHFWM_fake_script)()
+local function YFZM_fake_script() -- TeleportToPlayer.Teleport 
+	local script = Instance.new('LocalScript', TeleportToPlayer)
+
+	local TeleportationFrame = script.Parent.Parent.Parent.Parent.TeleportationSection
+	local PlayerFrame = TeleportationFrame.PlayerFrame
+	
+	local PlayerButtons = {} -- Store player buttons in a table to avoid duplicates
+	
+	-- Function to create a teleport button for a player with animation effect
+	local function createTeleportButton(player)
+		-- Check if the player is yourself (the local player)
+		local localPlayer = game.Players.LocalPlayer
+		if player == localPlayer then
+			return -- Don't create a teleport button for yourself
+		end
+	
+		-- Check if the button already exists for the player, and return if it does
+		if PlayerButtons[player] then
+			return
+		end
+	
+		-- Create the teleport button for the player
+		local TeleportToPlayer = Instance.new("TextButton")
+		TeleportToPlayer.Name = player.Name
+		TeleportToPlayer.Text = player.Name
+		TeleportToPlayer.Size = UDim2.new(0, 232, 0, 39)
+		TeleportToPlayer.Position = UDim2.new(0, 0, 0, 0)
+		TeleportToPlayer.Parent = PlayerFrame
+	
+		-- Customize the button appearance
+		TeleportToPlayer.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+		TeleportToPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TeleportToPlayer.TextScaled = true
+		TeleportToPlayer.ClipsDescendants = true
+		TeleportToPlayer.AutoButtonColor = false -- This prevents the button from changing color on click
+	
+		-- Add rounded corners to the button
+		local uiCorner = Instance.new("UICorner")
+		uiCorner.CornerRadius = UDim.new(0, 6)
+		uiCorner.Parent = TeleportToPlayer
+	
+		local function onClick()
+			-- Teleport the local player to the selected player's position
+			local character = localPlayer.Character
+			local humanoidRootPart = character and character:FindFirstChild("HumanoidRootPart")
+			local targetCharacter = player.Character
+			local targetHumanoidRootPart = targetCharacter and targetCharacter:FindFirstChild("HumanoidRootPart")
+			if humanoidRootPart and targetHumanoidRootPart then
+				humanoidRootPart.CFrame = targetHumanoidRootPart.CFrame
+			end
+	
+			-- Create the button animation effect
+			local circle = Instance.new("ImageLabel")
+			circle.Image = "rbxassetid://266543268"
+			circle.BackgroundTransparency = 1
+			circle.Size = UDim2.new(0, 0, 0, 0)
+			circle.Position = UDim2.new(0.5, 0, 0.5, 0)
+			circle.AnchorPoint = Vector2.new(0.5, 0.5)
+			circle.ImageColor3 = Color3.fromRGB(113, 113, 113)
+			circle.ImageTransparency = 0.6
+			circle.ZIndex = 10
+			circle.Parent = TeleportToPlayer
+	
+			local maxSize = math.max(TeleportToPlayer.AbsoluteSize.X, TeleportToPlayer.AbsoluteSize.Y) * 1.5
+	
+			local tweenInfo = TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+			local tween = game:GetService("TweenService"):Create(circle, tweenInfo, {
+				Size = UDim2.new(0, maxSize, 0, maxSize)
+			})
+	
+			tween:Play()
+			tween.Completed:Connect(function()
+				circle:Destroy()
+			end)
+		end
+	
+		-- Add a function to the button's MouseButton1Click event to handle teleporting and animation
+		TeleportToPlayer.MouseButton1Click:Connect(onClick)
+	
+		-- Store the button in the PlayerButtons table
+		PlayerButtons[player] = TeleportToPlayer
+	end
+	
+	-- Function to handle when a player is added to the game
+	local function onPlayerAdded(player)
+		createTeleportButton(player)
+	end
+	
+	-- Function to handle when a player is removed from the game
+	local function onPlayerRemoving(player)
+		-- Find the existing teleport button for the player and remove it
+		local existingButton = PlayerButtons[player]
+		if existingButton then
+			existingButton:Destroy()
+			PlayerButtons[player] = nil
+		end
+	end
+	
+	-- Connect the player added and player removing events
+	game.Players.PlayerAdded:Connect(onPlayerAdded)
+	game.Players.PlayerRemoving:Connect(onPlayerRemoving)
+	
+	-- Create teleport buttons for players already in the game
+	for _, player in ipairs(game.Players:GetPlayers()) do
+		createTeleportButton(player)
+	end
+	
+end
+coroutine.wrap(YFZM_fake_script)()
+local function YCJYB_fake_script() -- OwnerPFP.Profile 
+	local script = Instance.new('LocalScript', OwnerPFP)
+
+	local profilePictureLabel = script.Parent.Parent.OwnerPFP -- Replace "script.Parent.Parent.ProfilePicture" with the path to your ImageLabel
+	local userId = "winrarrrrr3005" -- Replace "winrarrrrr3005" with the UserId of the player whose profile picture you want to display
+	
+	-- Function to set the profile picture of the owner
+	local function setProfilePicture()
+		-- Set the profile picture of the ImageLabel to the Roblox website URL
+		profilePictureLabel.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. userId .. "&width=420&height=420&format=png"
+	end
+	
+	-- Call the function to set the profile picture initially
+	setProfilePicture()
+	
+end
+coroutine.wrap(YCJYB_fake_script)()
+local function JQBOML_fake_script() -- HelperPFP.Profile 
+	local script = Instance.new('LocalScript', HelperPFP)
+
+	local profilePictureLabel = script.Parent.Parent.HelperPFP -- Replace "script.Parent.Parent.ProfilePicture" with the path to your ImageLabel
+	local userId = "Error51723" -- Replace "winrarrrrr3005" with the UserId of the player whose profile picture you want to display
+	
+	-- Function to set the profile picture of the owner
+	local function setProfilePicture()
+		-- Set the profile picture of the ImageLabel to the Roblox website URL
+		profilePictureLabel.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. userId .. "&width=420&height=420&format=png"
+	end
+	
+	-- Call the function to set the profile picture initially
+	setProfilePicture()
+	
+end
+coroutine.wrap(JQBOML_fake_script)()
+local function RDOKVR_fake_script() -- ToggleButton.Mods 
+	local script = Instance.new('LocalScript', ToggleButton)
+
+	
+end
+coroutine.wrap(RDOKVR_fake_script)()
+local function HJVPZ_fake_script() -- Main2.VisibleButtons 
+	local script = Instance.new('LocalScript', Main2)
+
+	local home = script.Parent.MainFrame.Buttons.HomeButton
+	local LocalPlayer = script.Parent.MainFrame.Buttons.LocalPlayerButton
+	local Aimbot = script.Parent.MainFrame.Buttons.AimbotButton
+	local Visual = script.Parent.MainFrame.Buttons.VisualButton
+	local Teleportation = script.Parent.MainFrame.Buttons.TeleportationButton
+	local GunsMods = script.Parent.MainFrame.Buttons.GunModsButton
+	local Settings = script.Parent.MainFrame.Buttons.SettingsButton
+	local Credits = script.Parent.MainFrame.Buttons.CreditsButton
+	
+	home.Visible = false
+	LocalPlayer.Visible = false
+	Aimbot.Visible = false
+	Visual.Visible = false
+	Teleportation.Visible = false
+	Credits.Visible = false
+	Settings.Visible = false
+	GunsMods.Visible = false
+	
+	
+	wait(15)
+	home.Visible = true
+	wait(0.5)
+	LocalPlayer.Visible = true
+	wait(0.5)
+	Aimbot.Visible = true
+	wait(0.5)
+	Visual.Visible = true
+	wait(0.5)
+	Teleportation.Visible = true
+	wait(0.5)
+	GunsMods.Visible = true
+	wait(0.5)
+	Settings.Visible = true
+	wait(0.5)
+	Credits.Visible = true
+end
+coroutine.wrap(HJVPZ_fake_script)()
+local function HEKFW_fake_script() -- Main2.HotKey 
+	local script = Instance.new('LocalScript', Main2)
+
+	local hotkey = "v" -- must be lowercase
+	local frame = script.Parent.MainFrame
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	
+	
+	wait(12.5)
+	mouse.KeyDown:Connect(function(key)
+		if key == hotkey then
+			frame.Visible = not frame.Visible
+		end
+	end)
+	
+end
+coroutine.wrap(HEKFW_fake_script)()
+local function DNBHP_fake_script() -- Main2.HotKeyDestroy 
+	local script = Instance.new('LocalScript', Main2)
+
+	local hotkey = "h" -- must be lowercase
+	local frame = script.Parent.Parent.Main2
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	
+	
+	wait(12.5)
+	mouse.KeyDown:Connect(function(key)
+		if key == hotkey then
+			frame:Destroy()
+		end
+	end)
+end
+coroutine.wrap(DNBHP_fake_script)()
+local function KXCBFC_fake_script() -- Main2.DragScript 
+	local script = Instance.new('LocalScript', Main2)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent.MainFrame
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(KXCBFC_fake_script)()
+local function NGZHIRF_fake_script() -- KeyButton.LocalScript 
+	local script = Instance.new('LocalScript', KeyButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.KeySection.Visible = true
+		script.Parent.Parent.Parent.SettingsSection.Visible = false
+	end)
+end
+coroutine.wrap(NGZHIRF_fake_script)()
+local function ODTM_fake_script() -- KeyButton.HoverFunction 
+	local script = Instance.new('LocalScript', KeyButton)
+
+	local Button = script.Parent.Parent.Parent.Buttons.KeyButton
+	
+	local hoverColor = Color3.fromRGB(157, 58, 255) -- Purple (Hover Color)
+	local unhoverColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Unhover Color)
+	
+	local circleColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Circle Color)
+	local circleTransparency = 0.6 -- Circle Transparency (0 - 1)
+	
+	local circleDuration = 1 -- Duration of the circle effect in seconds
+	
+	local function onHover()
+		Button.BackgroundColor3 = hoverColor
+	end
+	
+	local function onUnhover()
+		Button.BackgroundColor3 = unhoverColor
+	end
+	
+	local function createCircleEffect()
+		local circle = Instance.new("ImageLabel")
+		circle.Name = "CircleEffect"
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		circle.Position = UDim2.new(0.5, 0, 0.5, 0)
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundTransparency = circleTransparency
+		circle.BackgroundColor3 = circleColor
+		circle.Parent = Button
+	
+		local fadeTween = game.TweenService:Create(circle, TweenInfo.new(circleDuration), { Size = UDim2.new(5, 0, 5, 0), BackgroundTransparency = 1 })
+		fadeTween:Play()
+	
+		fadeTween.Completed:Connect(function()
+			circle:Destroy()
+		end)
+	end
+	
+	Button.MouseEnter:Connect(onHover)
+	Button.MouseLeave:Connect(onUnhover)
+	Button.MouseButton1Click:Connect(createCircleEffect)
+	
+end
+coroutine.wrap(ODTM_fake_script)()
+local function HSDY_fake_script() -- SettingsButton_2.LocalScript 
+	local script = Instance.new('LocalScript', SettingsButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.KeySection.Visible = false
+		script.Parent.Parent.Parent.SettingsSection.Visible = true
+	end)
+end
+coroutine.wrap(HSDY_fake_script)()
+local function XYKMLL_fake_script() -- SettingsButton_2.HoverFunction 
+	local script = Instance.new('LocalScript', SettingsButton_2)
+
+	local Button = script.Parent.Parent.Parent.Buttons.SettingsButton
+	
+	local hoverColor = Color3.fromRGB(157, 58, 255) -- Purple (Hover Color)
+	local unhoverColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Unhover Color)
+	
+	local circleColor = Color3.fromRGB(50, 50, 50) -- Dark Gray (Circle Color)
+	local circleTransparency = 0.6 -- Circle Transparency (0 - 1)
+	
+	local circleDuration = 1 -- Duration of the circle effect in seconds
+	
+	local function onHover()
+		Button.BackgroundColor3 = hoverColor
+	end
+	
+	local function onUnhover()
+		Button.BackgroundColor3 = unhoverColor
+	end
+	
+	local function createCircleEffect()
+		local circle = Instance.new("ImageLabel")
+		circle.Name = "CircleEffect"
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		circle.Position = UDim2.new(0.5, 0, 0.5, 0)
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundTransparency = circleTransparency
+		circle.BackgroundColor3 = circleColor
+		circle.Parent = Button
+	
+		local fadeTween = game.TweenService:Create(circle, TweenInfo.new(circleDuration), { Size = UDim2.new(5, 0, 5, 0), BackgroundTransparency = 1 })
+		fadeTween:Play()
+	
+		fadeTween.Completed:Connect(function()
+			circle:Destroy()
+		end)
+	end
+	
+	Button.MouseEnter:Connect(onHover)
+	Button.MouseLeave:Connect(onUnhover)
+	Button.MouseButton1Click:Connect(createCircleEffect)
+	
+end
+coroutine.wrap(XYKMLL_fake_script)()
+local function VUZDQKK_fake_script() -- Title_11.Name 
+	local script = Instance.new('LocalScript', Title_11)
+
+	local player = game.Players.LocalPlayer.Name
+	local text = script.Parent.Parent.Title
+	
+	
+	text.Text = "Weclome, "..player.."!"
+end
+coroutine.wrap(VUZDQKK_fake_script)()
+local function NYNSPNR_fake_script() -- ProfilePicture_9.Profile 
+	local script = Instance.new('LocalScript', ProfilePicture_9)
+
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local profilePictureLabel = script.Parent.Parent.ProfilePicture -- Replace "script.Parent.Parent.ProfilePicture" with the path to your ImageLabel
+	
+	-- Function to set the profile picture of the local player
+	local function setProfilePicture()
+		-- Check if the LocalPlayer exists and has a character
+		if LocalPlayer and LocalPlayer.Character then
+			-- Get the UserId of the local player
+			local userId = LocalPlayer.UserId
+	
+			-- Set the profile picture of the ImageLabel to the Roblox website URL
+			profilePictureLabel.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. tostring(userId) .. "&width=420&height=420&format=png"
+		end
+	end
+	
+	-- Call the function to set the profile picture initially
+	setProfilePicture()
+	
+	-- Connect the function to the CharacterAdded event in case the character changes
+	LocalPlayer.CharacterAdded:Connect(setProfilePicture)
+	
+end
+coroutine.wrap(NYNSPNR_fake_script)()
+local function QIDAFK_fake_script() -- KeyFrame.Visible 
+	local script = Instance.new('LocalScript', KeyFrame)
+
+	local Vis = script.Parent.Parent.KeyFrame
+	
+	Vis.Visible = true
+end
+coroutine.wrap(QIDAFK_fake_script)()
+local function DZLSUN_fake_script() -- KeySystem.CheckKey 
+	local script = Instance.new('LocalScript', KeySystem)
+
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	
+	local KeyFrame = script.Parent.KeyFrame -- Your KeyFrame object, replace this with your KeyFrame object reference
+	local KeyBox = KeyFrame.KeySection.KeyBox -- Replace this with the actual TextBox reference inside KeyFrame
+	local CorrectKey = "asd" -- Replace "YOUR_CORRECT_KEY" with the actual correct key
+	
+	local KeyButton = KeyFrame.KeySection.KeyButton -- Your KeyButton object, replace this with your KeyButton object reference
+	local Main2GUI = script.Parent.Parent.Parent.Main2 -- Your Main2 GUI object, replace this with your Main2 GUI object reference
+	
+	local notificationFrame = script.Parent.Notification -- Your notificationFrame object, replace this with your Notification Frame object reference
+	
+	local isKeyEnabled = true
+	
+	local function enableMain2GUI()
+		-- Code to enable Main2 GUI here
+		Main2GUI.Enabled = true
+	end
+	
+	local function disableKeyFrame()
+		-- Code to destroy KeyFrame or hide it here
+		KeyFrame:Destroy()
+	end
+	
+	local function displayNotificationMessage(message)
+		-- Display a message on the notification frame
+		notificationFrame.displayNotificationMessage.Text = message
+		notificationFrame.Visible = true
+	end
+	
+	local function slideNotification()
+		notificationFrame.Position = UDim2.new(0.999, 0, 0.795, 0)
+		notificationFrame.Visible = true
+	
+		-- Display "Welcome (Username)" message on the notification frame
+		local username = game.Players.LocalPlayer.Name
+		displayNotificationMessage("Welcome " .. username)
+	
+		wait(3.5) -- Wait for 2 seconds
+	
+		-- Display "Loading GUI" message on the notification frame
+		displayNotificationMessage("Loading GUI")
+	
+		notificationFrame:TweenPosition(UDim2.new(0.785, 0, 0.795, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 2, true)
+	
+		RunService.RenderStepped:Wait() -- Wait for the next frame to ensure smooth animation
+	
+		wait(3) -- Wait for 3 seconds before sliding back
+		notificationFrame:TweenPosition(UDim2.new(0.999, 0, 0.795, 0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 2, true)
+	
+		wait(2) -- Wait for 2 seconds before enabling the Main2 GUI
+		notificationFrame:Destroy() -- Hide the notification frame after sliding back
+		enableMain2GUI()
+	end
+	
+	local function onKeyButtonClicked()
+		if isKeyEnabled then
+			local enteredKey = KeyBox.Text
+			if enteredKey == CorrectKey then
+				KeyButton.Text = "Correct Key!"
+				isKeyEnabled = false
+				wait(2) -- Wait for 2 seconds for the "Correct Key!" message
+				KeyButton.Text = "Check Key" -- Reset the button text after 2 seconds
+				disableKeyFrame()
+				slideNotification()
+			else
+				KeyButton.Text = "Incorrect Key!"
+				wait(2) -- Wait for 2 seconds for the "Incorrect Key!" message
+				KeyButton.Text = "Check Key" -- Reset the button text after 2 seconds
+			end
+		end
+	end
+	
+	KeyButton.MouseButton1Click:Connect(onKeyButtonClicked)
+	
+end
+coroutine.wrap(DZLSUN_fake_script)()
+local function DNPAM_fake_script() -- KeySystem.HotKeyDestroy 
+	local script = Instance.new('LocalScript', KeySystem)
+
+	local hotkey = "h" -- must be lowercase
+	local frame = script.Parent.Parent.KeySystem
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	
+	
+	wait(0.5)
+	mouse.KeyDown:Connect(function(key)
+		if key == hotkey then
+			frame:Destroy()
+		end
+	end)
+end
+coroutine.wrap(DNPAM_fake_script)()
